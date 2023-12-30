@@ -1,0 +1,29 @@
+{
+    "projects": [
+      {
+        "title": "Project 1",
+        "description": "This is the first project description.",
+        "thumbnail": "path/to/thumbnail1.jpg",
+        "cover": "path/to/cover1.jpg",
+        "addl": ["additional info 1a", "additional info 1b"],
+        "link": "https://example.com/project1"
+      },
+      {
+        "title": "Project 2",
+        "description": "This is the second project description.",
+        "thumbnail": "path/to/thumbnail2.jpg",
+        "cover": "path/to/cover2.jpg",
+        "addl": ["additional info 2a", "additional info 2b"],
+        "link": "https://example.com/project2"
+      },
+      {
+        "title": "Project 3",
+        "description": "This is the third project description.",
+        "thumbnail": "path/to/thumbnail3.jpg",
+        "cover": "path/to/cover3.jpg",
+        "addl": ["additional info 3a", "additional info 3b"],
+        "link": "https://example.com/project3"
+      }
+    ]
+  }
+  
