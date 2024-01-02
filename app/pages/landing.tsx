@@ -21,6 +21,7 @@ export default function LandingPage() {
           <Project
             key={index}
             title={project.title}
+            tagline={project.tagline}
             description={project.description}
             link={project.link}
             addl={project.addl}
