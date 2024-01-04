@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="299" height="219" viewBox="0 0 299 219">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 110px;
+        fill: #fff;
+        text-anchor: middle;
+        font-family: Arial;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <text id="Luke" class="cls-1" transform="translate(131.673 88.458) scale(0.808)"><tspan x="0">Luke</tspan></text>
+  <text id="Riley" class="cls-1" x="159.442" y="179.388"><tspan x="159.442">Riley</tspan></text>
+</svg>

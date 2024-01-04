@@ -1,0 +1,12 @@
+.circle-cursor {
+    cursor: none;
+    position: fixed;
+    width:65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: transparent;
+    pointer-events: none; 
+    z-index: 9999; 
+    mix-blend-mode:difference;
+    transition: width 0.15s ease-out, height 0.15s ease-out
+  }

@@ -1,0 +1,28 @@
+{
+    "films": [
+        {
+            "title":"The Ballad of the Tea Table",
+            "role":"Editor",
+            "description":"In a quiet town, a traveler and his remote partner-in-crime attempt to swindle two young homeowners out of a priceless piece of furniture.",
+            "embed":"<iframe src='https://player.vimeo.com/video/826539461?h=1379812926' width='1280' height='720' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>",
+            "id":"TBOTT",
+            "thumbnail":"/tbott.png"
+        },
+        {
+            "title":"TOTS",
+            "role":"Assistant Director",
+            "description":"Totally Over This Shit.",
+            "embed":"<iframe src='https://player.vimeo.com/video/899614096?h=2b4539da4a' width='1280' height='720' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>",
+            "id":"TOTS",
+            "thumbnail":"/tots.png"
+        },
+        {
+            "title":"Tigers and Sparrows",
+            "role":"Assistant Director",
+            "description":"The manager of a college band hears a rumor he's getting fired and wanders into the strangest night of his life.",
+            "embed":"<iframe src='https://player.vimeo.com/video/824787150?h=b58c443201' width='1280' height='720' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>",
+            "id":"tigersandsparrows",
+            "thumbnail":"/tigers.png"
+        }
+    ]
+}

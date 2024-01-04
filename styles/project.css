@@ -1,0 +1,75 @@
+:root {
+    --foreground-rgb: 0, 0, 0;
+    /* --background-start-rgb: 152, 108, 228;
+    --background-end-rgb: 120, 220, 220; */
+    --background-start-rgb: 150, 150,150;
+    --background-end-rgb: 10,10,10;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --foreground-rgb: 255, 255, 255;
+      --background-start-rgb: 80,80,80;
+    --background-end-rgb: 10,10,10;
+    }
+  }
+  
+  body {
+    color: rgb(var(--foreground-rgb));
+    background: radial-gradient(
+      circle at 33.33% 50%, 
+      rgb(var(--background-start-rgb)),
+      rgb(var(--background-end-rgb))
+    );
+    cursor: none;
+  }
+
+.cardGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items:baseline;
+    color:#FFFFFF;
+  }
+.starterPackCard {
+    width:400px;
+    height:400px;
+    /* border: 1px solid #ccc; */
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-bottom:20px;
+    margin-left:10px;
+    margin-right:10px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.cardInfo {
+    position:relative;
+    top: 10%;
+}
+
+.cardTitle {
+    font-weight:800;
+    font-size:150%;
+    opacity:200%;
+}
+
+.thumbnail {
+    border-radius:20px;
+}
+
+.cardDescription {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+}
+
+.starterPackCard .cardLink{
+    color:#FFE8C7;
+    background:#6196FE;
+    position:relative;
+    align-content:right;
+}
+

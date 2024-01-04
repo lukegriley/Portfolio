@@ -1,0 +1,43 @@
+/* navbar.css */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navlogo {
+    margin-left: 2%;
+  }
+  
+  .navlinks {
+    width: 35%;
+    margin-right: 3%;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .navlink {
+    position: relative;
+    padding: 20px;
+    font-size: 30px;
+    text-decoration: none;
+    color: white; 
+  }
+  
+    .navlink::after {
+      content: "";
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      width: 0;
+      height: 5px; 
+      background-color: white;
+      opacity: 0;
+      transition: width 0.3s ease-out, opacity 0.3s ease-out;
+    }
+  
+    .navlink:hover::after {
+      width: 100%;
+      opacity: 1;
+    }
