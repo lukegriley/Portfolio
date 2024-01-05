@@ -1,4 +1,4 @@
-import "../../styles/project.css";
+import "@/styles/project.css";
 
 export interface ProjectProps {
   title: string;

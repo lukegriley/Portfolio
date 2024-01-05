@@ -3,9 +3,9 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "./components/navbar";
 import Project, { ProjectProps } from "./components/project";
-import { fetchProjectsData, parseProjects } from "../utils/projectsparser";
-import "../styles/landing.css";
-import "../app/globals.css"
+import { fetchProjectsData, parseProjects } from "@/utils/projectsparser";
+import "@/styles/landing.css";
+import "@/app/globals.css"
 import Link from "@/../node_modules/next/link";
 import CircleCursor from "./components/circlecursor";
 

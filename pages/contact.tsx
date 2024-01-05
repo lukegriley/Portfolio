@@ -1,5 +1,5 @@
-import "../styles/contact.css"
-import "../app/globals.css"
+import "@/styles/contact.css"
+import "@/app/globals.css"
 import CircleCursor from "./components/circlecursor"
 import Navbar from "./components/navbar"
 

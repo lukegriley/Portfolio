@@ -2,8 +2,8 @@ import Navbar from "../components/navbar";
 import { useState, useEffect } from "react";
 import { fetchProjectsDataById } from "@/utils/projectsparser";
 import { ProjectProps } from "../components/project";
-import "../../styles/projectpage.css"
-import "../../app/globals.css"
+import "@/styles/projectpage.css"
+import "@/app/globals.css"
 import { useRouter } from "@/../node_modules/next/router";
 import { useParams } from "@/../node_modules/next/navigation";
 import CircleCursor from "../components/circlecursor";

@@ -1,5 +1,5 @@
 import { useEffect,useState} from "react";
-import '../../styles/cursor.css'; 
+import '@/styles/cursor.css'; 
 
 const CircleCursor: React.FC = () => {
   const [cursorSize, setCursorSize] = useState({ width: 65, height: 65 });
