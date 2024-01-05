@@ -62,9 +62,9 @@ export default function Logo(props:LogoProps){
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
     >
-      {/* {logoText}
-       */}
-      <img src="/luke.svg" width="150"></img>
+      {logoText}
+      
+      {/* <img src="/luke.svg" width="150"></img> */}
     </div>
     </Link>
   );

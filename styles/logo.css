@@ -1,12 +1,11 @@
 .fish-eye-text {
-    display: inline-block;
-    font-size: 100px;
-    color:white;
-    transition: all 0.3s ease-out;
-  }
-  
-  .fish-eye-hovered {
-    transform: scale(1.1);
-    transition: all 0.7s ease-in-out;
-  }
-  
+  display: inline-block;
+  font-size: 100px;
+  color:white;
+  transition: all 0.3s ease-out;
+}
+
+.fish-eye-hovered {
+  transform: scale(1.1);
+  transition: all 0.7s ease-in-out;
+}
