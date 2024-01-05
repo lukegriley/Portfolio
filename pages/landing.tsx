@@ -32,7 +32,7 @@ export default function LandingPage() {
       </div>
       <div className="middle">
       <div className="intro">
-        <p>Hi! I'm a third-year student at Brown University double concentrating Computer Science and Modern Culture &amp; Media. I'm interested in software development, computer graphics, data science, and making movies :) This portfolio showcases my work in all areas. </p>
+        <p>Hi! I&apos;m a third-year student at Brown University double concentrating Computer Science and Modern Culture &amp; Media. I'm interested in software development, computer graphics, data science, and making movies :) This portfolio showcases my work in all areas. </p>
       </div>
       <div className="cv-hint">
         {/* <strong className="exp-hint hoverable">EXPERIENCE</strong> */}
