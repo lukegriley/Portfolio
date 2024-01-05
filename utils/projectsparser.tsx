@@ -1,6 +1,6 @@
 import { readFile } from "fs/promises";
 import React from "react";
-import { ProjectProps } from "../pages/components/project";
+import { ProjectProps } from "pages/components/project";
 
 export interface FilmProps {
   title:string,

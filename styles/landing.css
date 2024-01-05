@@ -36,13 +36,13 @@ html, body {
 }
 
 .stroke-scroll {
-    color:#606060;
+    color:#808080;
    text-shadow:
-       3px 3px 0 #FFFFFF,
-     -1px -1px 0 #FFFFFF,  
-      1px -1px 0 #FFFFFF,
-      -1px 1px 0 #FFFFFF,
-       1px 1px 0 #FFFFFF;
+       3px 3px 0 #000000,
+     -1px -1px 0 #000000,  
+      1px -1px 0 #000000,
+      -1px 1px 0 #000000,
+       1px 1px 0 #000000;
 }
 
 .second-scroll {
@@ -55,16 +55,14 @@ html, body {
        1px 1px 0 #606060;
 }
 .scroll {
-    margin-top:-20px;
     display: flex;
-    overflow: hidden; /* Hide overflowing content */
+    overflow: hidden;
 }
 
 .scroll p {
     font-size: 150px;
-    width: 300vw;
-    white-space: nowrap; /* Prevent text from wrapping to the next line */
-    animation: scrollText 30s linear infinite; /* Adjust duration as needed */
+    white-space: nowrap;
+    animation: scrollText 24s linear infinite; /* Adjust duration as needed */
 }
 
 @keyframes scrollText {
@@ -72,6 +70,40 @@ html, body {
         transform: translateX(0%);
     }
     100% {
-        transform: translateX(-100%);
+        transform: translateX(-50%);
     }
+}
+
+
+.middle {
+    top:3%;
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    position:relative;
+    width:80%;
+    left:10%;
+}
+
+.intro {
+    width:30%;
+    position:relative;
+}
+
+.cv-hint {
+    position:relative;
+    font-size:20px;
+    right:5%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.exp-hint {
+    margin-bottom:10px;
+}
+
+.cv {
+    margin-top: 8%;
+    margin-left:6%;
 }

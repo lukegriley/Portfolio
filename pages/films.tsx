@@ -4,8 +4,8 @@ import React, { useEffect, useState } from "react";
 import Navbar from "./components/navbar";
 import Project, { ProjectProps } from "./components/project";
 import { fetchFilmData, fetchProjectsData, FilmProps, parseProjects } from "../utils/projectsparser";
-import "../styles/landing.css";
-import "../app/globals.css"
+import "styles/landing.css";
+import "app/globals.css"
 import Link from "@/../node_modules/next/link";
 import CircleCursor from "./components/circlecursor";
 import { FilmProps } from "../utils/projectsparser";

@@ -1,9 +1,9 @@
 // ./app/pages/components/logo.tsx
 import React, { useState, MouseEvent } from 'react';
-import Link from '../../node_modules/next/link'
+import Link from '@/node_modules/next/link'
 import { useEffect } from 'react';
 
-import '../../styles/Logo.css'; 
+import 'styles/Logo.css'; 
 
 interface Position {
   x: number;
@@ -62,9 +62,9 @@ export default function Logo(props:LogoProps){
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
     >
-      {/* {logoText}
-       */}
-      <img src="/luke.svg" width="150"></img>
+      {logoText}
+      
+      {/* <img src="/luke.svg" width="150"></img> */}
     </div>
     </Link>
   );
