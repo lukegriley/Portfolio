@@ -13,12 +13,12 @@ export default function Page() {
   // const projectId  = router.query.projectId;
   // const params = useParams<{projectId:string}>();
   const params = useParams();
-  const filmId: string | null = params?.filmId || null;
+  const filmId: string | string[] | null = params?.filmId || null;
   
   const [project, setProject] = useState<FilmProps | null>(null);
   
   useEffect(() => {
-    if (filmId) {
+    if (typeof filmId==='string') {
       fetchFilmDataById(filmId, setProject);
     }
   }, [filmId]);

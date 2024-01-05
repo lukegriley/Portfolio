@@ -13,12 +13,12 @@ export default function Page() {
   // const projectId  = router.query.projectId;
   // const params = useParams<{projectId:string}>();
   const params = useParams();
-  const projectId: string | null = params?.projectId || null;
+  const projectId: string | string[] | null  = params?.projectId || null;
   
   const [project, setProject] = useState<ProjectProps | null>(null);
   
   useEffect(() => {
-    if (projectId) {
+    if (typeof projectId==='string') {
       fetchProjectsDataById(projectId, setProject);
     }
   }, [projectId]);
