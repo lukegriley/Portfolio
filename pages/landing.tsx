@@ -5,7 +5,7 @@ import Navbar from "./components/navbar";
 import Project, { ProjectProps } from "./components/project";
 import { fetchProjectsData, parseProjects } from "@/utils/projectsparser";
 import "@/styles/landing.css";
-import Link from "../node_modules/next/link";
+import Link from "next/link";
 import Logo from "./components/logo";
 import CV from "./cv";
 

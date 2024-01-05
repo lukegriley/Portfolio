@@ -4,8 +4,8 @@ import { fetchProjectsDataById } from "@/utils/projectsparser";
 import { ProjectProps } from "../components/project";
 import "@/styles/projectpage.css"
 import "@/app/globals.css"
-import { useRouter } from "../node_modules/next/router";
-import { useParams } from "../node_modules/next/navigation";
+import { useRouter } from "next/router";
+import { useParams } from "next/navigation";
 import CircleCursor from "../components/circlecursor";
 
 export default function Page() {

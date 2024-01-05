@@ -1,6 +1,6 @@
 // ./app/pages/components/logo.tsx
 import React, { useState, MouseEvent } from 'react';
-import Link from '../../node_modules/next/link'
+import Link from 'next/link'
 import { useEffect } from 'react';
 
 import '@/styles/logo.css'; 
