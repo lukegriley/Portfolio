@@ -3,7 +3,7 @@ import React, { useState, MouseEvent } from 'react';
 import Link from '../../node_modules/next/link'
 import { useEffect } from 'react';
 
-import 'styles/Logo.css'; 
+import './styles/Logo.css'; 
 
 interface Position {
   x: number;
