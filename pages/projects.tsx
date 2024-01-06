@@ -1,12 +1,11 @@
 
-
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import Navbar from "./components/navbar";
 import Project, { ProjectProps } from "./components/project";
 import { fetchProjectsData, parseProjects } from "../utils/projectsparser";
 import "../styles/landing.css";
 import "../app/globals.css"
-// import Link from "next/link";
 import CircleCursor from "./components/circlecursor";
 
 export default function Projects() {
@@ -20,7 +19,7 @@ export default function Projects() {
       <div className="landing">
           <CircleCursor/>
         <Navbar collapse={false}/>
-        {/* <div className="projectsList">
+        <div className="projectsList">
         {projects &&
           projects.map((project, index) => (
               <Link key={index} href={`/project/${project.id}`}>
@@ -37,7 +36,7 @@ export default function Projects() {
             />
             </Link>
           ))}
-      </div> */}
+      </div>
       </div>
     );
 }

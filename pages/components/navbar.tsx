@@ -1,5 +1,5 @@
 import Logo from "./logo"
-import Link from "@/../node_modules/next/link";
+import Link from "@/node_modules/next/link";
 import "styles/navbar.css"
 import { LogoProps } from "./logo";
 export default function Navbar(props: LogoProps) {

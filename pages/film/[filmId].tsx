@@ -4,8 +4,8 @@ import { fetchFilmDataById, fetchProjectsDataById, FilmProps } from "@/utils/pro
 import { ProjectProps } from "../components/project";
 import "styles/filmpage.css"
 import "app/globals.css"
-import { useRouter } from "@/../node_modules/next/router";
-import { useParams } from "@/../node_modules/next/navigation";
+import { useRouter } from "@/node_modules/next/router";
+import { useParams } from "@/node_modules/next/navigation";
 import CircleCursor from "../components/circlecursor";
 
 export default function Page() {
@@ -38,10 +38,6 @@ return ( <div>
     <h3 className="proj-desc">{project.description}</h3>
     <br/>
     
-    {project.addl &&
-        project.addl.map((additionalImage, index) => (
-          <img className="addl-img" key={index} src={additionalImage} alt={`Additional Image ${index + 1}`}/>
-    ))}
     </div>
   </div>)
   }
