@@ -39,9 +39,6 @@ export default function LandingPage() {
         {/* <FaAngleDoubleDown/> */}
       </div>
       </div>
-      <div className="cv">
-        <CV/>
-      </div>
     </div>
   );
 }

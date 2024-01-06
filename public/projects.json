@@ -56,6 +56,29 @@
         "id":"flipbook"
       },
       {
+        "title": "HACK @ BROWN",
+        "tagline": "Website for the 2023 and 2024 Hack @ Brown hackathon.",
+        "description":"As part of the dev team for Hack @ Brown, designed and deployed the hackathon's website and registration system. I was responsible for the starter packs page, game design starter packs, and a section of web 3D models shown on the webpage using three.js. <br/> <br/> <strong><a href='2024.hackatbrown.org'>Visit the site here.</a></strong>",
+        "thumbnail": "hab24.png",
+        "cover": "hab24.png",
+        "addl": [],
+        "link": "https://github.com/hackatbrown/2024.hackatbrown.org/",
+        "id":"hackatbrown"
+      },
+      {
+        "title": "180 DEGREES CONSULTING",
+        "tagline": "Website for the 180DC Brown Chapter.",
+        "description":"Developed for the Full Stack @ Brown student organization (Spring '23). I was responsible for Figma mockups and skeleton page components.",
+        "thumbnail": "180dc.png",
+        "cover": "180dc.png",
+        "addl": [],
+        "link": "https://github.com/fullstackatbrown/180-degrees-consulting",
+        "id":"180degrees"
+      },
+      
+      
+
+      {
         "title": "DECISION TREE",
         "tagline": "Decision tree made in Java.",
         "description":"A decision tree is a hierarchical model used for making decisions, particularly in machine learning and data analysis. It resembles an inverted tree structure, where each internal node represents a decision based on a specific feature or attribute, and each leaf node corresponds to the outcome or classification. The tree is constructed by recursively splitting the dataset into subsets based on the best features that provide the most information gain or impurity reduction. Decision trees are versatile and intuitive, making them widely used for classification and regression tasks. They are interpretable, allowing users to trace the decision-making process easily. However, they may be prone to overfitting, and techniques like pruning are often applied to optimize their performance.",

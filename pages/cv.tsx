@@ -2,10 +2,14 @@ import React from "react";
 import "@/app/globals.css"
 import CircleCursor from "./components/circlecursor";
 import "@/styles/cv.css"
+import Navbar from "./components/navbar";
 
 export default function CV() {
   return (
-    <div>
+    <>
+    <Navbar collapse={false}/>
+    <CircleCursor/>
+    <div className="cvbody">
       <section>
         <h2>EDUCATION</h2>
         <ul className="bullet">
@@ -112,6 +116,7 @@ export default function CV() {
         </ul>
       </section>
     </div>
+    </>
   );
 };
 

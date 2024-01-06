@@ -10,6 +10,7 @@ export default function Navbar(props: LogoProps) {
         <div className="navlinks">
         <Link href="/projects" className="hoverable navlink">PROJECTS</Link>
         <Link href="/films" className="hoverable navlink">FILM</Link>
+        <Link href="/cv" className="hoverable navlink">CV</Link>
         <Link href="/contact" className="hoverable navlink">CONTACT</Link>
         </div>
         </div>);
