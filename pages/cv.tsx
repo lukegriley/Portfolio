@@ -10,23 +10,18 @@ export default function CV() {
     <Navbar collapse={false}/>
     <CircleCursor/>
     <div className="cvbody">
+      <h1>LUKE G. RILEY</h1>
       <section>
         <h2>EDUCATION</h2>
-        <ul className="bullet">
-          <li>
-            <strong>Brown University, Providence, RI</strong>
+            <h3>Brown University, Providence, RI</h3>
             <ul>
-              <li>A.B., expected May 2025; GPA 3.94</li>
+              <li>A.B., expected May 2025; GPA 3.91</li>
               <li>Double concentrations in Computer Science and Modern Culture & Media</li>
             </ul>
-          </li>
-          <li>
-            <strong>Harvard-Westlake School, Los Angeles, CA</strong>
-            <ul>
+            <h3>Harvard-Westlake School, Los Angeles, CA</h3>
+            <ul className="bullet">
               <li>Class of 2021; Cum Laude; GPA 4.5</li>
             </ul>
-          </li>
-        </ul>
       </section>
 
       <section>

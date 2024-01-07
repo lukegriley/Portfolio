@@ -9,8 +9,8 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 80,80,80;
-  --background-end-rgb: 10,10,10;
+    --background-start-rgb: 35,35,35;
+  --background-end-rgb: 0,0,0;
   }
 }
 
@@ -41,7 +41,7 @@ body {
   margin-bottom:20px;
   margin-left:10px;
   margin-right:10px;
-  border-radius: 20px;
+  /* border-radius: 20px; */
   background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -57,7 +57,7 @@ body {
 }
 
 .thumbnail {
-  border-radius:20px;
+  /* border-radius:20px; */
 }
 
 .cardDescription {

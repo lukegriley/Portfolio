@@ -23,36 +23,38 @@ html, body {
 
 .name-title {
     font-size:140px;
+    font-weight:600;
 }
 
 .solid-scroll {
     margin-right:10px;
+    color:#b0b0b0;
     text-shadow:
-       3px 3px 0 #606060,
-     -1px -1px 0 #606060,  
-      1px -1px 0 #606060,
-      -1px 1px 0 #606060,
-       1px 1px 0 #606060;
+       3px 3px 0 #ffffff,
+     -1px -1px 0 #ffffff,  
+      1px -1px 0 #ffffff,
+      -1px 1px 0 #ffffff,
+       1px 1px 0 #ffffff;
 }
 
 .stroke-scroll {
-    color:#808080;
+    color:#505050;
    text-shadow:
-       3px 3px 0 #000000,
-     -1px -1px 0 #000000,  
-      1px -1px 0 #000000,
-      -1px 1px 0 #000000,
-       1px 1px 0 #000000;
+       3px 3px 0 #ffffff,
+     -1px -1px 0 #ffffff,  
+      1px -1px 0 #ffffff,
+      -1px 1px 0 #ffffff,
+       1px 1px 0 #ffffff;
 }
 
 .second-scroll {
-    color:#202020;
+    color:#101010;
    text-shadow:
-       3px 3px 0 #606060,
-     -1px -1px 0 #606060,  
-      1px -1px 0 #606060,
-      -1px 1px 0 #606060,
-       1px 1px 0 #606060;
+       3px 3px 0 #ffffff,
+     -1px -1px 0 #ffffff,  
+      1px -1px 0 #ffffff,
+      -1px 1px 0 #ffffff,
+       1px 1px 0 #ffffff;
 }
 .scroll {
     display: flex;

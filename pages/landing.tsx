@@ -20,12 +20,12 @@ export default function LandingPage() {
       <Navbar collapse={true}/>
       <div className="center-content">
       <div className="title">
-      <h1 className="name-title">Luke Riley</h1>
+      <h1 className="name-title">LUKE RILEY</h1>
       </div>
       <div className="scroll">
     <p className="solid-scroll">
-        Computer Science &amp;{' '}<span className="stroke-scroll">Modern Culture &amp;</span><span className="second-scroll"> Media &amp;{' '}</span>
-        Computer Science &amp;{' '}<span className="stroke-scroll">Modern Culture &amp;</span><span className="second-scroll"> Media &amp;{' '}</span>
+        COMPUTER SCIENCE &amp;{' '}<span className="stroke-scroll">MODERN CULTURE &amp;</span><span className="second-scroll"> MEDIA &amp;{' '}</span>
+        COMPUTER SCIENCE &amp;{' '}<span className="stroke-scroll">MODERN CULTURE &amp;</span><span className="second-scroll"> MEDIA &amp;{' '}</span>
     </p>
 </div>
 
