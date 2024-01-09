@@ -46,6 +46,16 @@
         "id":"helm"
       },
       {
+        "title": "RAYMARCHING ENGINE",
+        "tagline": "Incorporating raymarching into the traditional graphics pipeline",
+        "description":"In progress. Check out the repo linked above, and come back soon!",
+        "thumbnail": "marching.png",
+        "cover": "../smooth loop.gif",
+        "addl": [],
+        "link": "https://github.com/lukegriley/raymarching",
+        "id":"raymarching"
+      },
+      {
         "title": "FLIPBOOK",
         "tagline": "Accessible full-stack animation web app.",
         "description":"Flipbook\n\nA full-stack animation webapp made with Typescript, React, MongoDB, in collaboration with aong9, oanders6, dsaunde2, bmaizes.\n\n## Background\nMaking animations has an accessibility problem. To make quality animations this requires professional software which is often bricked by a steep learning curve, expensive paywalls, and hardware demands. We gathered knowledge about this problem through interviews with peer animators, non-animators with interest in doing so, and through reviews of other animation software.\n\nOur project solves this by bridging the accessibility gap in animation with a simple sketch and tracing based interface. Of course, a non-software based solution would be to produce physical flipbooks to be drawn on, but our software allows the fast creation of animation cells and tracing of existing images/video frames. Doing this on a physical flipbook would require a large of paper resources and a backlit tracing surface.\n\nThis app should be a seamless, easy to access application for any users. It should be quickly deployable and with little barrier. The idea is that users will use it whenever they seek to animate something or want to work on an animation project or as a reference to other development projects.\n\n## Structure\n\nWhiteboard data module (model) → stores the data from user input to the website, ex. a series of drawn frames, by calling on the animation module via API\n\nWhiteboard visual module (view) → visually displays the data from the whiteboard data by calling on the animation module via API. This model will be made accessible through ARIA labels and descriptions, and with keyboard shortcuts like enter = move to the next frame, shift + enter = go to previous frame, shift+tab = hide/show the outline from the previous frame\n\nAnimation module (controller) → stores data from all the frames, putting the relevant frame onto the screen when appropriate and allowing new data to be added. Communicates with both the whiteboard visual and whiteboard data modules.\n\nExport module (model) → converts the data for a selected animations into either a GIF or mp4 based on the user’s choice.",
@@ -60,7 +70,7 @@
         "tagline": "Website for the 2023 and 2024 Hack @ Brown hackathon.",
         "description":"As part of the dev team for Hack @ Brown, designed and deployed the hackathon's website and registration system. I was responsible for the starter packs page, game design starter packs, and a section of web 3D models shown on the webpage using three.js. <br/> <br/> <strong><a href='2024.hackatbrown.org'>Visit the site here.</a></strong>",
         "thumbnail": "hab24.png",
-        "cover": "hab24.png",
+        "cover": "../hab24.png",
         "addl": [],
         "link": "https://github.com/hackatbrown/2024.hackatbrown.org/",
         "id":"hackatbrown"
@@ -70,7 +80,7 @@
         "tagline": "Website for the 180DC Brown Chapter.",
         "description":"Developed for the Full Stack @ Brown student organization (Spring '23). I was responsible for Figma mockups and skeleton page components.",
         "thumbnail": "180dc.png",
-        "cover": "180dc.png",
+        "cover": "../180dc.png",
         "addl": [],
         "link": "https://github.com/fullstackatbrown/180-degrees-consulting",
         "id":"180degrees"
