@@ -3,12 +3,15 @@ import "@/app/globals.css"
 import CircleCursor from "./components/circlecursor";
 import "@/styles/cv.css"
 import Navbar from "./components/navbar";
+import Link from "next/link"
 
 export default function CV() {
   return (
     <>
+    
     <Navbar collapse={false}/>
     <CircleCursor/>
+    <Link href="/Luke Riley Resume 2024.pdf" className="pdfLink hoverable">See single-page PDF</Link>
     <div className="cvbody">
       <h1>LUKE G. RILEY</h1>
       <section>
@@ -17,6 +20,33 @@ export default function CV() {
             <ul>
               <li>A.B., expected May 2025; GPA 3.91</li>
               <li>Double concentrations in Computer Science and Modern Culture & Media</li>
+              <div className="course-container">
+              <details>
+                <summary className="courses hoverable">Relevant CS Courses</summary>
+                <ul>
+                  <li>CSCI 1430: Computer Vision</li>
+                  <li>CSCI 1470: Deep Learning</li>
+                  <li>CSCI 1230: Computer Graphics</li>
+                  <li>CSCI 0330: Computer Systems</li>
+                  <li>CSCI 0320: Introduction to Software Engineering</li>
+                  <li>CSCI 0200: Data Structures and Algorithms</li>
+                  <li>ENGN 1010: The Entrepreneurial Process</li>
+                  <li>APMA 1650: Statistical Inference</li>
+                  <li>MATH 0520: Linear Algebra</li>
+                  <li>ECON 0110: Principles of Economics</li>
+                </ul>
+              </details>
+              <details>
+                <summary className="courses hoverable">Relevant Media Courses</summary>
+                <ul>
+                  <li>MCM 0710: Filmic Practice</li>
+                  <li>MCM 0150: Text/Media/Culture</li>
+                  <li>MCM 0230: Digital Media</li>
+                  <li>VISA 0120: Digital Foundation</li>
+                  <li>PLSH 1000: Polish Cinema</li>
+                </ul>
+              </details>
+              </div>
             </ul>
             <h3>Harvard-Westlake School, Los Angeles, CA</h3>
             <ul className="bullet">

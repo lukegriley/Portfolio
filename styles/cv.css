@@ -21,6 +21,22 @@ li{
 margin-bottom: 8px; 
 }
 
+.pdfLink {
+    font-size:100%;
+    text-decoration:underline;
+    margin-left:20px;
+}
+
+.courses {
+    text-decoration:underline;
+}
+
+.course-container {
+    display:flex;
+    width:70%;
+    justify-content:space-between;
+}
+
 h2 {
     font-size:250%;
 }
