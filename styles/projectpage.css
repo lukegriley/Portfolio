@@ -54,6 +54,10 @@ html, body {
     padding-left:0px;
 }
 
+a {
+    text-decoration:underline;
+}
+
 .addl-img {
     margin-bottom:30px;
 }
