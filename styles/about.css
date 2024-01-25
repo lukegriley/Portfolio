@@ -1,0 +1,236 @@
+@font-face {
+    font-family: 'Baumans';
+    src: url('/Baumans-Regular.ttf');
+}
+
+:root {
+  --a-delay: 3s;
+}
+
+body {
+    margin-top:0px;
+    margin-left:0px;
+}
+
+.about {
+    font-family:'Baumans', sans-serif;
+    margin-left:0px;
+}
+.red {
+    background-color: #C72D2D;
+    position: fixed;
+    top: 0%;
+    height: 10vw;
+    z-index: 3;
+    animation: draw-red 1s ease-out forwards;
+    animation-delay: .7s;
+  }
+
+  .blue {
+    background-color: #2828A7;
+    position: fixed;
+    height: 0vh;
+    width: 10vw;
+    z-index: 4;
+    bottom: 0;
+    animation: draw-blue .7s ease-out forwards;
+  }
+
+  .yellow {
+    background-color: #E09B20;
+    position: fixed;
+    height: 0vh;
+    width: 10vw;
+    left: 90vw;
+    
+    z-index: 2;
+    animation: draw-yellow .7s ease-out forwards;
+    animation-delay: 1.7s; /* Delay the yellow animation by 2 seconds */
+  }
+
+  @keyframes draw-red {
+    from {
+      width: 0vw;
+    }
+    to {
+      width: 100vw;
+    }
+  }
+
+  @keyframes draw-blue {
+    from {
+      height: 0vh;
+    }
+    to {
+      height: 100vh;
+    }
+  }
+
+  @keyframes draw-yellow {
+    from {
+      height: 0vh;
+    }
+    to {
+      height: 100vh;
+    }
+  }
+
+.inside {
+    position:absolute;
+    left:10vw;
+    top:10vw;
+    padding:10px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:80vw;
+}
+
+.nav {
+    font-size:200%;
+    display:flex;
+    justify-content: space-around;
+    margin-left:10vw;
+    margin-right:10vw;
+    margin-top:2vw;
+    width:60vw;
+}
+
+.navlink {
+    text-decoration: underline;
+    opacity:0;
+    animation: fadeInText 2s ease-in-out forwards;
+}
+
+.second {
+    animation-delay:.7s;
+}
+
+.third {
+    animation-delay:1.4s;
+}
+.fourth {
+    animation-delay:2.1s;
+}
+
+.intro {
+    font-size:200%;
+    margin-top:4vw;
+}
+
+@keyframes fadeInText {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+.intromap {
+    height: 60vh;
+}
+.arr {
+  fill:none;
+    stroke-width:9px;
+    stroke:'#000000';
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+}
+#arrow1a {
+  animation: drawArrow 1s linear forwards;
+  animation-delay: var(--a-delay);
+}
+
+#arrow1b {
+  animation: drawArrow 1s linear forwards;
+  stroke-dashoffset: -1000;
+  animation-delay: var(--a-delay);
+}
+
+#tri1 {
+  opacity: 0;
+  animation: fadeIn .7s ease-in-out forwards;
+  animation-delay: calc(0.2s + var(--a-delay));
+}
+
+#nameluke {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-delay:calc(-0.2s + var(--a-delay));
+}
+
+#arrow2a {
+  animation: drawArrow 1s linear forwards;
+  animation-delay: calc(2s + var(--a-delay));
+}
+
+#arrow2b {
+  animation: drawArrow 1s linear forwards;
+  stroke-dashoffset: -1000;
+  animation-delay: calc(1.7s + var(--a-delay));
+}
+
+#tri2 {
+  opacity: 0;
+  animation: fadeIn .7s ease-in-out forwards;
+  animation-delay: calc(2.2s + var(--a-delay));
+}
+
+#studentbrown {
+  opacity: 0;
+  animation: fadeIn .7s ease-in-out forwards;
+  animation-delay: calc(1.2s + var(--a-delay));
+}
+
+#studycs {
+  opacity: 0;
+  animation: fadeIn .7s ease-in-out forwards;
+  animation-delay: calc(3.3s + var(--a-delay));
+}
+
+#arrow3a {
+  animation: drawArrow 1s linear forwards;
+  animation-delay: calc(4.3s + var(--a-delay));
+}
+
+#arrow3b {
+  animation: drawArrow 1s linear forwards;
+  stroke-dashoffset: -1000;
+  animation-delay: calc(4.1s + var(--a-delay));
+}
+
+#tri3 {
+  opacity: 0;
+  animation: fadeIn .7s ease-in-out forwards;
+  animation-delay: calc(4.1s + var(--a-delay));
+}
+
+#arrow4 {
+  animation: drawArrow 1s linear forwards;
+  animation-delay: calc(6.2s + var(--a-delay));
+}
+
+#tri4 {
+  opacity: 0;
+  animation: fadeIn .7s ease-in-out forwards;
+  animation-delay: calc(6.2s + var(--a-delay));
+}
+
+#mcm {
+  opacity: 0;
+  animation: fadeIn .7s ease-in-out forwards;
+  animation-delay: calc(5.5s + var(--a-delay));
+}
+
+  @keyframes drawArrow {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }

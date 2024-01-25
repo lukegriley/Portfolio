@@ -42,3 +42,13 @@
     width: 100%;
     opacity: 1;
   }
+
+  .navbar.collapsed .navlinks.collapsed {
+    display: none;
+  }
+  
+  .navbar.collapsed .navlinks.collapsed {
+    display: flex;
+    flex-direction: column;
+  }
+

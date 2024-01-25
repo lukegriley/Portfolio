@@ -9,7 +9,32 @@
             "thumbnail": "/tbott.png"
         },
         {
-            "title": "TOTS",
+            "title": "TOTS (Trailer)",
+            "role": "Editor",
+            "description": "Trailer for the film \"Totally Over This School\"",
+            "embed": "<iframe src='https://drive.google.com/file/d/1PZIC_HKIGEbiY5tQTpJ-m2p2UTQFUEBr/preview' width='1280' height='720' allow='autoplay'></iframe>",
+            "id": "totstrailer",
+            "thumbnail": "/totstrailer.png"
+        },
+        {
+            "title": "I'M VERY, VERY SORRY",
+            "role": "Sound Recordist",
+            "description": "",
+            "embed": "<iframe src='https://player.vimeo.com/video/708460451?h=a53de40fbd' width='1280' height='720' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>",
+            "id": "imveryverysorry",
+            "thumbnail": "/ivvs.png"
+        },
+        {
+            "title": "VISA 120 PORTFOLIO",
+            "role": "Selected projects from Foundation Media",
+            "description": "",
+            "embed": "<iframe width='1280' height='720' src='https://www.youtube.com/embed/JKs8mCWrMVw?si=J9bVahE2hDE0pjLh' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+            "id": "visa120",
+            "thumbnail": "/visa120thumb.png"
+        },
+
+        {
+            "title": "Totally Over This School",
             "role": "Assistant Director, Assistant Editor",
             "description": "Totally Over This Sh*t.",
             "embed": "<iframe src='https://player.vimeo.com/video/899614096?h=2b4539da4a' width='1280' height='720' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>",
@@ -24,14 +49,7 @@
             "id": "tigersandsparrows",
             "thumbnail": "/tigers.png"
         },
-        {
-            "title": "I'M VERY, VERY SORRY",
-            "role": "Sound Recordist",
-            "description": "",
-            "embed": "<iframe src='https://player.vimeo.com/video/708460451?h=a53de40fbd' width='1280' height='720' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>",
-            "id": "imveryverysorry",
-            "thumbnail": "/ivvs.png"
-        },
+        
         {
             "title": "BAHA BLAST",
             "role": "Associate Producer",

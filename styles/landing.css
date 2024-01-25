@@ -30,31 +30,30 @@ html, body {
     margin-right:10px;
     color:#b0b0b0;
     text-shadow:
-       3px 3px 0 #ffffff,
+       1px 1px 0 #ffffff,
      -1px -1px 0 #ffffff,  
       1px -1px 0 #ffffff,
-      -1px 1px 0 #ffffff,
-       1px 1px 0 #ffffff;
+      -1px 1px 0 #ffffff;
 }
 
 .stroke-scroll {
     color:#505050;
-   text-shadow:
+   /* text-shadow:
        3px 3px 0 #ffffff,
      -1px -1px 0 #ffffff,  
       1px -1px 0 #ffffff,
       -1px 1px 0 #ffffff,
-       1px 1px 0 #ffffff;
+       1px 1px 0 #ffffff; */
 }
 
 .second-scroll {
     color:#101010;
-   text-shadow:
+   /* text-shadow:
        3px 3px 0 #ffffff,
      -1px -1px 0 #ffffff,  
       1px -1px 0 #ffffff,
       -1px 1px 0 #ffffff,
-       1px 1px 0 #ffffff;
+       1px 1px 0 #ffffff; */
 }
 .scroll {
     display: flex;
