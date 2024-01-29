@@ -16,15 +16,7 @@
             "id": "20days",
             "thumbnail": "/20daysthumb.png"
         },
-        {
-            "title": "TIGERS AND SPARROWS",
-            "role": "Assistant Director",
-            "description": "The manager of a college band hears a rumor he's getting fired and wanders into the strangest night of his life.",
-            "embed": "<iframe src='https://player.vimeo.com/video/824787150?h=b58c443201' width='1280' height='720' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>",
-            "id": "tigersandsparrows",
-            "thumbnail": "/tigers.png"
-        },
-        
+
         {
             "title": "I'M VERY, VERY SORRY",
             "role": "Sound Recordist",
@@ -32,6 +24,14 @@
             "embed": "<iframe src='https://player.vimeo.com/video/708460451?h=a53de40fbd' width='1280' height='720' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>",
             "id": "imveryverysorry",
             "thumbnail": "/ivvs.png"
+        },
+        {
+            "title": "TIGERS AND SPARROWS",
+            "role": "Assistant Director",
+            "description": "The manager of a college band hears a rumor he's getting fired and wanders into the strangest night of his life.",
+            "embed": "<iframe src='https://player.vimeo.com/video/824787150?h=b58c443201' width='1280' height='720' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>",
+            "id": "tigersandsparrows",
+            "thumbnail": "/tigers.png"
         },
         {
             "title": "Totally Over This School",
