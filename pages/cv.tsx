@@ -62,7 +62,7 @@ export default function CV() {
         <p>Content and Operations Intern | June - July 2023</p>
         <ul className="bullet">
           <li>Participated in activities across content teams, including tracking acquisitions, production status, release schedules, and distribution planning.</li>
-          <li>Provided editorial coverage, including screening of projects in consideration and comments on the same.</li>
+          <li>Compiled grassroots research for promotion of the Oscar-nominated PBS documentary 20 Days in Mariupol.</li>
           <li>Participated in content reviews, pitch, and partnership meetings with filmmakers, producers, and distributors.</li>
           <li>Reviewed and researched program rights, verified content launches, and compiled release strategies.</li>
         </ul>

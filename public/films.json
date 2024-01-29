@@ -8,38 +8,13 @@
             "id": "TBOTT",
             "thumbnail": "/tbott.png"
         },
-        {
-            "title": "TOTS (Trailer)",
-            "role": "Editor",
-            "description": "Trailer for the film \"Totally Over This School\"",
-            "embed": "<iframe src='https://drive.google.com/file/d/1PZIC_HKIGEbiY5tQTpJ-m2p2UTQFUEBr/preview' width='1280' height='720' allow='autoplay'></iframe>",
-            "id": "totstrailer",
-            "thumbnail": "/totstrailer.png"
-        },
-        {
-            "title": "I'M VERY, VERY SORRY",
-            "role": "Sound Recordist",
-            "description": "",
-            "embed": "<iframe src='https://player.vimeo.com/video/708460451?h=a53de40fbd' width='1280' height='720' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>",
-            "id": "imveryverysorry",
-            "thumbnail": "/ivvs.png"
-        },
-        {
-            "title": "VISA 120 PORTFOLIO",
-            "role": "Selected projects from Foundation Media",
-            "description": "",
-            "embed": "<iframe width='1280' height='720' src='https://www.youtube.com/embed/JKs8mCWrMVw?si=J9bVahE2hDE0pjLh' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
-            "id": "visa120",
-            "thumbnail": "/visa120thumb.png"
-        },
-
-        {
-            "title": "Totally Over This School",
-            "role": "Assistant Director, Assistant Editor",
-            "description": "Totally Over This Sh*t.",
-            "embed": "<iframe src='https://player.vimeo.com/video/899614096?h=2b4539da4a' width='1280' height='720' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>",
-            "id": "TOTS",
-            "thumbnail": "/tots.png"
+        {  
+            "title": "20 DAYS IN MARIUPOL",
+            "role": "Theatrical Outreach Intern",
+            "description": "During my time as a summer intern for PBS Distribution, I conducted grassroots outreach to theaters and cultural organizations for the promotion of the theatrical release of Frontline's 20 Days in Mariupol.",
+            "embed": "<img src='../20days.png' width='1280' height='720'/>",
+            "id": "20days",
+            "thumbnail": "/20daysthumb.png"
         },
         {
             "title": "TIGERS AND SPARROWS",
@@ -51,12 +26,45 @@
         },
         
         {
+            "title": "I'M VERY, VERY SORRY",
+            "role": "Sound Recordist",
+            "description": "",
+            "embed": "<iframe src='https://player.vimeo.com/video/708460451?h=a53de40fbd' width='1280' height='720' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>",
+            "id": "imveryverysorry",
+            "thumbnail": "/ivvs.png"
+        },
+        {
+            "title": "Totally Over This School",
+            "role": "Assistant Director, Assistant Editor",
+            "description": "Totally Over This Sh*t.",
+            "embed": "<iframe src='https://player.vimeo.com/video/899614096?h=2b4539da4a' width='1280' height='720' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>",
+            "id": "TOTS",
+            "thumbnail": "/tots.png"
+        },
+        
+        {
             "title": "BAHA BLAST",
             "role": "Associate Producer",
             "description": "",
             "embed": "<iframe src='https://player.vimeo.com/video/767646359?h=1c3c7dc39f' width='1280' height='720' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>",
             "id": "bahablast",
             "thumbnail": "/baha.png"
+        },
+        {
+            "title": "TOTS (Trailer)",
+            "role": "Editor",
+            "description": "Trailer for the film \"Totally Over This School\"",
+            "embed": "<iframe src='https://drive.google.com/file/d/1PZIC_HKIGEbiY5tQTpJ-m2p2UTQFUEBr/preview' width='1280' height='720' allow='autoplay'></iframe>",
+            "id": "totstrailer",
+            "thumbnail": "/totstrailer.png"
+        },
+        {
+            "title": "VISA 120 PORTFOLIO",
+            "role": "Selected projects from Foundation Media",
+            "description": "",
+            "embed": "<iframe width='1280' height='720' src='https://www.youtube.com/embed/JKs8mCWrMVw?si=J9bVahE2hDE0pjLh' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+            "id": "visa120",
+            "thumbnail": "/visa120thumb.png"
         }
     ]
 }
