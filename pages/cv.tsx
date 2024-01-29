@@ -25,7 +25,7 @@ export default function CV() {
                 <summary className="courses hoverable">Relevant CS Courses</summary>
                 <ul>
                   <li>CSCI 1430: Computer Vision</li>
-                  <li>CSCI 1470: Deep Learning</li>
+                  <li>CSCI 2240: Advanced Computer Graphics</li>
                   <li>CSCI 1230: Computer Graphics</li>
                   <li>CSCI 0330: Computer Systems</li>
                   <li>CSCI 0320: Introduction to Software Engineering</li>
@@ -39,6 +39,7 @@ export default function CV() {
               <details>
                 <summary className="courses hoverable">Relevant Media Courses</summary>
                 <ul>
+                  <li>MCM 1710U: Advanced Projects in Film and Video</li>
                   <li>MCM 0710: Filmic Practice</li>
                   <li>MCM 0150: Text/Media/Culture</li>
                   <li>MCM 0230: Digital Media</li>
