@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Baumans';
-    src: url('/Baumans-Regular.ttf');
+    src: url('/SourceSerif4-t.ttf');
 }
 
 :root {
@@ -15,6 +15,8 @@ body {
 .about {
     font-family:'Baumans', sans-serif;
     margin-left:0px;
+    display:flex column;
+    justify-content: center;
 }
 .red {
     background-color: #C72D2D;
@@ -84,6 +86,7 @@ body {
     flex-direction: column;
     align-items: center;
     width:80vw;
+    height:50%;
 }
 
 .nav {
@@ -97,7 +100,7 @@ body {
 }
 
 .navlink {
-    text-decoration: underline;
+    /* text-decoration: underline; */
     opacity:0;
     animation: fadeInText 2s ease-in-out forwards;
 }
@@ -114,8 +117,10 @@ body {
 }
 
 .intro {
-    font-size:200%;
-    margin-top:4vw;
+  display:flex column;
+  justify-content: center;
+  margin-top:4vw;
+  width:50%;
 }
 
 @keyframes fadeInText {
@@ -137,6 +142,37 @@ body {
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
 }
+
+.name-title {
+  font-size:600%;
+  display:flex;
+  width:100%;
+  text-wrap:nowrap;
+  justify-content: center;
+  animation: fadeInText 4s ease-in-out forwards;
+  
+}
+
+.introtext {
+  margin-top:3vw;
+  justify-content: center;
+  display:flex;
+  text-indent:25px;
+  padding-left:25px;
+  padding-right:25px;
+}
+
+.intropara {
+  max-width: 700px;
+}
+
+.foot {
+  width:100%;
+  bottom:0%;
+  position:absolute;
+  animation: fadeInText 4s ease-in-out forwards;
+}
+
 #arrow1a {
   animation: drawArrow 1s linear forwards;
   animation-delay: var(--a-delay);
