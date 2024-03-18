@@ -25,3 +25,14 @@
     width:80vw;
     height:50%;
   }
+
+
+@font-face {
+    font-family: 'Baumans';
+    src: url('/SourceSerif4-t.ttf');
+  }
+
+  @font-face {
+  font-family: 'Serif Italic';
+  src: url('/SourceSerif4-Italic-VariableFont_opsz,wght.ttf');
+  }

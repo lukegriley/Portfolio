@@ -1,7 +1,8 @@
 .cvbody {
     margin-top:3vw;
     margin-left:20px;
-    width:75%;
+    /* width:75%; */
+    max-width:80vw;
 }
 
 .bullet {
@@ -46,7 +47,7 @@ margin-bottom: 8px;
     align-items: center;
     width:100vw;
     height:50%;
-    max-width:80vw;
+    
   }
 
 .courses {
