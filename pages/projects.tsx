@@ -6,6 +6,7 @@ import { fetchProjectsData, parseProjects } from "@/utils/projectsparser";
 import Link from "next/link";
 import CircleCursor from "./components/circlecursor";
 // import "@/styles/globals.css"
+import "@/app/globals.css"
 import "@/styles/project.css"
 import Navs from "./components/Nav";
 import Bars from "./components/bars";
