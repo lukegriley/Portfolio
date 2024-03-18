@@ -1,0 +1,62 @@
+.red {
+    background-color: #C72D2D;
+    position: fixed;
+    top: 0%;
+    height: 10vw;
+    z-index: 3;
+    animation: draw-red 1s ease-out forwards;
+    animation-delay: .7s;
+    max-height:100px;
+  }
+
+  .blue {
+    background-color: #2828A7;
+    position: fixed;
+    height: 0vh;
+    width: 10vw;
+    max-width:100px;
+    z-index: 4;
+    bottom: 0;
+    animation: draw-blue .7s ease-out forwards;
+  }
+
+  .yellow {
+    background-color: #E09B20;
+    position: fixed;
+    height: 0vh;
+    width: 10vw;
+    /* left: 90vw; */
+    right:0%;
+    max-width:100px;
+    z-index: 2;
+    animation: draw-yellow .7s ease-out forwards;
+    animation-delay: 1.7s; /* Delay the yellow animation by 2 seconds */
+  }
+
+
+  @keyframes draw-red {
+    from {
+      width: 0vw;
+    }
+    to {
+      width: 100vw;
+    }
+  }
+
+  @keyframes draw-blue {
+    from {
+      height: 0vh;
+    }
+    to {
+      height: 100vh;
+    }
+  }
+
+  @keyframes draw-yellow {
+    from {
+      height: 0vh;
+    }
+    to {
+      height: 100vh;
+    }
+  }

@@ -8,6 +8,9 @@ import "@/styles/landing.css";
 import "@/app/globals.css"
 import Link from "next/link";
 import CircleCursor from "./components/circlecursor";
+import Bars from "./components/bars";
+import Navs from "./components/Nav";
+import Footer from "./footer";
 
 export default function Projects() {
   const [films, setFilms] = useState<FilmProps[] | null>(null);
@@ -19,9 +22,11 @@ export default function Projects() {
 
   return (
     <div className="landing">
-        <CircleCursor/>
-      <Navbar collapse={false}/>
+      <Bars/>
+      <div className="inside">
+      <Navs selected={2}/>
       <div className="projectsList">
+        
       {films &&
         films.map((film, index) => (
           <Link key={index} href={`/film/${film.id}`}>
@@ -38,6 +43,8 @@ export default function Projects() {
           />
           </Link>
         ))}
+    </div>
+    <Footer/>
     </div>
     </div>
   );

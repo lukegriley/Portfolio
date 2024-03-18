@@ -5,10 +5,23 @@
 }
 
 .title {
-    font-size:150px;
+    margin-top:100px;
+    font-size:30px;
 }
 
 .email {
-    font-size:100px;
+    font-size:40px;
     text-decoration: underline;
 }
+
+.inside {
+    position:absolute;
+    left:10vw;
+    top:10vw;
+    padding:10px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:80vw;
+    height:50%;
+  }

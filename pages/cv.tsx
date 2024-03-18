@@ -1,16 +1,19 @@
 import React from "react";
-import "@/app/globals.css"
+// import "@/app/globals.css"
 import CircleCursor from "./components/circlecursor";
 import "@/styles/cv.css"
 import Navbar from "./components/navbar";
 import Link from "next/link"
+import Bars from "./components/bars";
+import Navs from "./components/Nav";
+import Footer from "./footer";
 
 export default function CV() {
   return (
     <>
-    
-    <Navbar collapse={false}/>
-    <CircleCursor/>
+    <Bars/>
+    <div className="inside">
+    <Navs selected={3}/>
     <Link href="/Luke Riley Resume 2024.pdf" className="pdfLink hoverable">See single-page PDF</Link>
     <div className="cvbody">
       <h1>LUKE G. RILEY</h1>
@@ -23,7 +26,7 @@ export default function CV() {
               <div className="course-container">
               <details>
                 <summary className="courses hoverable">Relevant CS Courses</summary>
-                <ul>
+                <ul className="courselist">
                   <li>CSCI 1430: Computer Vision</li>
                   <li>CSCI 2240: Advanced Computer Graphics</li>
                   <li>CSCI 1230: Computer Graphics</li>
@@ -38,7 +41,7 @@ export default function CV() {
               </details>
               <details>
                 <summary className="courses hoverable">Relevant Media Courses</summary>
-                <ul>
+                <ul className="courselist">
                   <li>MCM 1710U: Advanced Projects in Film and Video</li>
                   <li>MCM 0710: Filmic Practice</li>
                   <li>MCM 0150: Text/Media/Culture</li>
@@ -62,7 +65,7 @@ export default function CV() {
         <p>Content and Operations Intern | June - July 2023</p>
         <ul className="bullet">
           <li>Participated in activities across content teams, including tracking acquisitions, production status, release schedules, and distribution planning.</li>
-          <li>Compiled grassroots research for promotion of the Oscar-nominated PBS documentary 20 Days in Mariupol.</li>
+          <li>Compiled grassroots research for promotion of the Oscar-winning PBS documentary 20 Days in Mariupol.</li>
           <li>Participated in content reviews, pitch, and partnership meetings with filmmakers, producers, and distributors.</li>
           <li>Reviewed and researched program rights, verified content launches, and compiled release strategies.</li>
         </ul>
@@ -141,6 +144,8 @@ export default function CV() {
           <li>Taught and mentored middle school students in topics such as Python, game design with Unity and C#, filmmaking, and photography as an Instructor at Curious Cardinals.</li>
         </ul>
       </section>
+    </div>
+    <Footer/>
     </div>
     </>
   );

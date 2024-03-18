@@ -3,35 +3,16 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
+  --foreground-rgb: 255,255,255;
   /* --background-start-rgb: 152, 108, 228;
   --background-end-rgb: 120, 220, 220; */
-  --background-start-rgb: 150, 150,150;
-  --background-end-rgb: 10,10,10;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 40,40,40;
-  --background-end-rgb: 0,0,0;
-  }
+@font-face {
+  font-family: 'Baumans';
+  src: url('/SourceSerif4-t.ttf');
 }
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: radial-gradient(
-    circle at 33.33% 50%, 
-    rgb(var(--background-start-rgb)),
-    rgb(var(--background-end-rgb))
-  );
-  cursor: none;
-}
-
-Link {
-  cursor: none;
-}
-
-a {
-  cursor: none;
+  color: #000000;
+  font-family: 'Baumans';
 }
