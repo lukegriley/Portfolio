@@ -2,11 +2,12 @@ import Navbar from "../components/navbar";
 import { useState, useEffect } from "react";
 import { fetchFilmDataById, fetchProjectsDataById, FilmProps } from "@/utils/projectsparser";
 import { ProjectProps } from "../components/project";
+import Navs from "../components/Nav";
+import Bars from "../components/bars";
 import "@/styles/filmpage.css"
 import "@/app/globals.css"
 import { useRouter } from "next/router";
 import { useParams } from "next/navigation";
-import CircleCursor from "../components/circlecursor";
 
 export default function Page() {
   // const router = useRouter();
@@ -27,8 +28,9 @@ export default function Page() {
     } 
     else {
   return ( <div>
-      <CircleCursor/>
-      <Navbar collapse={false}/>
+      <Bars/>
+      <div className="inside">
+      <Navs selected={0}/>
       <div className="project-body">
       
       <h1 className="proj-title">{project.title}</h1>
@@ -37,7 +39,7 @@ export default function Page() {
       <br/>
       <h3 className="proj-desc">{project.description}</h3>
       <br/>
-      
+      </div>
       </div>
     </div>)
     }

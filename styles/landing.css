@@ -1,12 +1,15 @@
 .landing {
     width:100%;
     height:100%;
+    color:#000000;
+    font-family:'Baumans'
 }
 
 html, body {
     margin: 0;
     padding: 0;
     height: 100%;
+    background:#ffffff;
 } 
   
 .projectsList {

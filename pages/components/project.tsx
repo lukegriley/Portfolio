@@ -16,7 +16,7 @@ export default function Project(props: ProjectProps) {
     backgroundImage: `url(${props.thumbnail})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
-    width: "360px",
+    width: "260px",
     height: "200px",
   };
 

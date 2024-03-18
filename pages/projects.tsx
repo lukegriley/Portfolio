@@ -1,13 +1,15 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import Navbar from "./components/navbar";
 import Project, { ProjectProps } from "./components/project";
 import { fetchProjectsData, parseProjects } from "@/utils/projectsparser";
-import "@/styles/landing.css";
-import "@/app/globals.css"
 import Link from "next/link";
 import CircleCursor from "./components/circlecursor";
+// import "@/styles/globals.css"
+import "@/styles/project.css"
+import Navs from "./components/Nav";
+import Bars from "./components/bars";
+import Footer from "./footer";
 
 export default function Projects() {
   const [projects, setProjects] = useState<ProjectProps[] | null>(null);
@@ -17,9 +19,10 @@ export default function Projects() {
   }, []);
 
   return (
-    <div className="landing">
-        <CircleCursor/>
-      <Navbar collapse={false}/>
+    <div>
+      <Bars/>
+      <div className="inside">
+      <Navs selected={1}/>
       <div className="projectsList">
       {projects &&
         projects.map((project, index) => (
@@ -37,6 +40,7 @@ export default function Projects() {
           />
           </Link>
         ))}
+    </div>
     </div>
     </div>
   );

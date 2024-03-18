@@ -1,4 +1,7 @@
 import Navbar from "../components/navbar";
+import Navs from "../components/Nav";
+import Footer from "../footer";
+import Bars from "../components/bars";
 import { useState, useEffect } from "react";
 import { fetchProjectsDataById } from "@/utils/projectsparser";
 import { ProjectProps } from "../components/project";
@@ -27,8 +30,9 @@ export default function Page() {
     } 
     else {
   return ( <div>
-      <CircleCursor/>
-      <Navbar collapse={false}/>
+      <Bars/>
+      <div className="inside">
+      <Navs selected={0}/>
       <div className="project-body">
       <img src={project.cover} alt="Project Cover" />
       <h1 className="proj-title">{project.title}</h1>
@@ -43,6 +47,7 @@ export default function Page() {
           project.addl.map((additionalImage, index) => (
             <img className="addl-img" key={index} src={additionalImage} alt={`Additional Image ${index + 1}`}/>
       ))}
+      </div>
       </div>
     </div>)
     }

@@ -1,4 +1,5 @@
 "use client"
+import About from '@/pages/about';
 import LandingPage from '../pages/landing'
 import { useEffect } from 'react';
 
@@ -20,5 +21,5 @@ export default function Home() {
   }, []);
 
 
-  return (<LandingPage />);
+  return (<About />);
 }
