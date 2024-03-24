@@ -8,6 +8,7 @@
     max-width:100px;
     z-index: 4;
     bottom: 0;
+    left:0%;
     animation: draw-blue .7s ease-out forwards;
   }
   .red {
