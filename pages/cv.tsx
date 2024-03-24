@@ -1,5 +1,5 @@
 import React from "react";
-// import "@/app/globals.css"
+import "@/app/globals.css"
 import CircleCursor from "./components/circlecursor";
 import "@/styles/cv.css"
 // import "@/app/globals.css"

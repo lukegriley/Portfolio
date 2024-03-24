@@ -2,8 +2,11 @@ import Navbar from "../components/navbar";
 import { useState, useEffect } from "react";
 import { fetchProjectsDataById } from "@/utils/projectsparser";
 import { ProjectProps } from "../components/project";
-import "@/styles/projectpage.css"
 import "@/app/globals.css"
+import "@/styles/projectpage.css"
+
+import Bars from "../components/bars";
+import Navs from "../components/Nav";
 import { useRouter } from "next/router";
 import { useParams } from "next/navigation";
 import CircleCursor from "../components/circlecursor";
@@ -23,9 +26,10 @@ export default function Page() {
         return(<h1>Project ID not found.</h1>);
     } 
     else {
-  return ( <div>
-      <CircleCursor/>
-      <Navbar collapse={false}/>
+    return ( <div>
+      <Bars/>
+      <div className="inside">
+      <Navs selected={0}/>
       <div className="project-body">
       <iframe src="https://drive.google.com/file/d/1oyknDe_eDyTXVMn1sffx-3-eQqQfbj4V/preview" width="1280" height="720" allow="autoplay"></iframe>  
       <h1 className="proj-title">{project.title}</h1>
@@ -40,6 +44,7 @@ export default function Page() {
           project.addl.map((additionalImage, index) => (
             <img className="addl-img" key={index} src={additionalImage} alt={`Additional Image ${index + 1}`}/>
       ))}
+      </div>
       </div>
     </div>)
     }
