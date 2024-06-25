@@ -4,8 +4,8 @@
         "title": "RAYTRACER",
         "tagline": "A raytracer built in C++, with Phong illumination, shadow mapping, and recursive reflections.",
         "description": "My Raytracer calculates intersections and object normals by creating an object of the Intersection class associated with a given pixel's P and d values in object space. The main function of this object, calculateIntersection(), uses a switch statement to call intersection calculation functions based on the primitive type. These functions themselves have helper functions, which calculate possible T values for each face. The cylinder intersection function, for example, calls a function for intersection with a cylindrical surface, along with two calls to flat base intersection function (at 2 different Y levels). This allows me to reuse code for certain faces across multiple primitives. Once each faces' T values have been calculated, the primitive intersection function picks the smallest positive T value, if any, and returns. Separating my implicit equations by face also allows me to keep track of which face was hit by the ray, which I allows me to quickly calculate object normals.<br /><br /> Because of this, my calculateObjectNormal() function follows a similar philosophy of face-based helper functions. While looping through the primitives in my scene, I keep track of the shape with the closest T value. I save this shape's intersection object in closestI and primitive object in closestShape. These are both used to calculate lighting. After looping through, I calculate the object's normal in world space using the inverse transpose of the shape's CTM, as discussed in lecture. I calculate the direction to the camera using's the object's and the camera's positions in world space. I pass all the necessary data to a phong() function in a separate light.cpp class. My current version only implements directional light. I loop through all lights, check if any are directional, and implement phong illumination as explained previously.",
-        "thumbnail": "https://raw.githubusercontent.com/BrownCSCI1230/scenefiles/main/illuminate/required_outputs/shadow/shadow_test.png",
-        "cover": "https://raw.githubusercontent.com/BrownCSCI1230/scenefiles/main/illuminate/required_outputs/shadow/shadow_test.png",
+        "thumbnail": "./p_thumbnails/rt_TH.jpeg",
+        "cover": "/p_covers/rt.png",
         "addl": ["https://raw.githubusercontent.com/BrownCSCI1230/scenefiles/main/illuminate/required_outputs/spot_light/spot_light_2.png",
            "https://raw.githubusercontent.com/BrownCSCI1230/scenefiles/main/illuminate/required_outputs/reflection/reflections_complex.png"],
         "link": "https://github.com/lukegriley/Raytracer",
@@ -15,7 +15,7 @@
         "title": "QUAKECLONE",
         "tagline": "Multiplayer FPS (kind of Quake-y) coded entirely in C++ and GLSL.",
         "description": "<br/><strong>Introduction:</strong><p>The overall goal of this project was to design and make a multiplayer FPS game. This would provide challenges for synchronizing physics and game state across many clients. We ended up achieving a playable multiplayer deathmatch game.</p><br/><ul><li><strong>Design/Implementation:</strong> </li></ul><br/><p>The project's core was the “Entity Component System,” or “ECS” for short. This design enabled us to synchronize game state across different clients more easily than other game architectures. As an overview, the ECS consists of entities (32 bit integers with each bit corresponding to a component), components (structs of data associated with different entities), and systems (functions that apply to all entities with given components).</p><br/><p>As a user of our ECS, you register components and systems beforehand. Those get stored in continuous arrays where the index into the array is the entity’s id. Another continuous array is stored that maps entity ids to their corresponding component flags. Then, you register “systems” which are functions that have the ecs, entity, and delta time as parameters along with a bitmask of required components.</p><br/><p>Once registered, each system is called on all entities with corresponding bitmasks every frame. We opted to use arrays in the backend because we had 1 byte corresponding to each component's ID, meaning there would be 256 elements for each component. While there could be optimizations here to make this expandable, having it fixed means we get ease of use from the network side, and other efficiencies (such as cache hits). It also reduced the complexity of our code, and given this project's scope was large between needing both graphics and networking capabilities, that was helpful. In addition, the scale of our project is pretty small (only a handful of players shooting no more than ~5 projectiles at a time), and thus it was extremely unlikely we would need more than 256 entities at a time.</p><br/><p>To prevent jitter and allow for similar designs between the server and clients, we have a system of “authority.” A client will have authority over anything it creates, and the server initially sends the corresponding player to kick it off. The server has authority over everything else. Any network client with authority over an object has authority over all of the client's state; incoming packets won’t override their version of its state, and they will send out packets with entities they have authority over.</p><br/><p>One issue with this is that there needs to be more local security. An attacker could modify the client to position their player or projectiles anywhere on the map without checks. On the other hand, it also ensures that malicious actors cannot edit clients.</p><br/><p>Because ECS is a data-driven system, designing the actual networking was relatively straightforward. No TCP was used, only UDP sockets. The server starts up, a connection is established using UDP and getting IP information from the sockets, then every game tick the state is broadcasted.</p><br/><p>To broadcast state, the server (or client with all entities it has authority over) iterates through all the data in the ECS and puts any alive and registered entities and data onto UDP packets, and sends them off. Because state updates are sent so frequently and because speed is of the essence, reliability and packet order are not necessary. However, each packet header has information about what local tick it was sent on, which is then used to compare with the last received packets to know what or what not to deserialize. The data is serialized by registering object, flag, then the component data, and deserialized by copying component data based on the inputted object and flags (component order is the same order as on the flags), and “null-terminated” when the next object and flags are both 0.</p><br/><p>To ensure synchronization, the client and server register the same systems and components (except the render system because that is only client-sided). They are running identical systems and constantly synchronizing their data, so everything should be relatively in sync.</p><br/><p>All in all, the process goes something like this:</p><br/><ul><li>The server starts up</li><li>A client sends a request to the server on a pre-agreed-upon port and IP</li><li>The server gets this request, creates a “connection” struct representing that client, and sends back a welcome message with the player entity corresponding with the client</li><li>The client receives the welcome message gets its player entity, and also sets up a connection struct representing the server</li><li>The game loop begins</li><li>At the beginning of each frame, the server and client check a queue of game state updates.</li><li>If this queue is not empty, copy its data onto the local version of the ECS for all objects that they do not have authority over</li><li>For the first set of packets received, authority doesn't matter. They will just receive the state from the server.</li><li>Run and render the simulation (physics, rendering, etc.)</li><li>Any objects created by objects this client or server has authority over will also have authority by the local client</li><li>Broadcast the game state</li><li>For the client, broadcast all objects they have authority over to the server</li><li>For the server, broadcast the whole game state to all clients (when deserialized, if they have authority, it will be ignored)</li></ul><p>It took a while for us to get the server working consistently. We also had to do a lot of wrangling and meetups to align the graphics and server teams. Debugging was much easier as we had new tools and could visualize issues. Most of the progress was slow-moving until the very end, where much of the game logic came together in the last day or two.</p>",
-        "thumbnail": "https://i.imgur.com/KN1Q1C5.png",
+        "thumbnail": "./p_thumbnails/quake_TH.jpeg",
         "cover": "https://i.imgur.com/KN1Q1C5.png",
         "addl": ["https://i.imgur.com/9b8G4Sz.png"],
         "link": "https://drive.google.com/file/d/1oyknDe_eDyTXVMn1sffx-3-eQqQfbj4V/view",
@@ -26,8 +26,8 @@
         "title": "RASTERIZATION",
         "tagline": "Real-time graphics pipeline template made with C++ and GLSL.",
         "description":"In this project, I continued building upon the foundation established in the CS1230's Raytracing assignments. The project involved designing a real-time scene viewer using components from previous labs, including Parsing, Transformations, Trimeshes, VAOs, and Shaders. The scene parser from Lab 5: Parsing was utilized to read in scene files in JSON format, replacing the previous use of .ini files. Additionally, I implemented tessellation for shapes such as cube, sphere, cone, and cylinder, extending the capabilities developed in my trimeshes laoder.<br/><br/>The camera functionality was enhanced to generate both view and projection matrices based on the scene file's camera parameters. Unlike the raytracer, the real-time viewer required a projection matrix to convert from camera space to clip space for OpenGL rendering.<br/> This introduced the ability to interactively adjust the near and far clipping planes in real-time.<br/><br/>The core of the project focused on data handling, leveraging OpenGL pipelines to manipulate and manage scene data. VAOs and VBOs were appropriately designed to represent shape data in OpenGL, minimizing code duplication and ensuring an object-oriented approach. Shaders were extended to support directional lights, ambient, diffuse, and specular intensity computation, and the final color computation integrating object and light colors. The shaders were designed to handle up to 8 simultaneous lights using arrays and structs in GLSL.<br/><br/>The project was structured to maintain efficiency and stability, avoiding excess memory usage by carefully managing VBOs and VAOs. The finish() function was implemented to clean up generated memory before program exit. The Realtime::settingsChanged() function was crucial for handling changes in parameters such as near and far clipping planes and shape tessellation parameters.<br/><br/>The results showcased the real-time renderer's capabilities through sample images, demonstrating the rendering of complex scenes with varying levels of tessellation and lighting effects. The Scenes Viewer web tool facilitated the creation and modification of scene files, streamlining the development process.<br/><br/>For the submission, the repository included a submission template file (submission-lights-camera.md) containing details about design choices, collaboration, known bugs, and implemented extra credit. The project was graded based on camera data, shape implementations, shaders, and software engineering efficiency and stability, with extra credit options available for further enhancements.",
-        "thumbnail": "https://raw.githubusercontent.com/BrownCSCI1230/scenefiles/main/action/required_outputs/recursive_sphere_4_sharpen.png",
-        "cover": "https://raw.githubusercontent.com/BrownCSCI1230/scenefiles/main/action/required_outputs/primitive_salad_1_invert.png",
+        "thumbnail": "./p_thumbnails/rast_TH.jpeg",
+        "cover": "/p_covers/rast.png",
         "addl": ["https://raw.githubusercontent.com/BrownCSCI1230/scenefiles/main/action/required_outputs/recursive_sphere_4_sharpen.png",
           "https://raw.githubusercontent.com/BrownCSCI1230/scenefiles/main/action/required_outputs/spot_light_2.png"],
         "link": "https://github.com/lukegriley/rasterizer",
@@ -37,8 +37,8 @@
         "title": "HELM.AI",
         "tagline": "A prototype AI model for climate risk assessment towards real estate properties.",
         "description":"An MVP prototype for an AI risk evaluator for cliamte damage to American real estate.<br/>Uses SCIKIT gradient boosting model in combination with historical climate disaster data, real-time NWS data, and property-specific vulnerable characteristics.<br/>Our business proposal won first place among final pitch judges for ENGN 1010. <strong><a className=\"hoverable\"href=\"https://docs.google.com/presentation/d/1PvFg9vB56K5no0lHdBYM5I9KPbjMzv5s-N9wXL1dFSk/view\">Read our final pitch here.</a></strong>",
-        "thumbnail": "https://i.imgur.com/zJ9xHGT.png",
-        "cover": "https://i.imgur.com/yj2oo70.png",
+        "thumbnail": "./p_thumbnails/helm_TH.jpeg",
+        "cover": "/p_covers/helm.png",
         "addl": ["https://i.imgur.com/6i67PtI.png",
         "https://i.imgur.com/pDfzfC5.png",
         "https://i.imgur.com/0wPXhLL.png"],
@@ -49,8 +49,8 @@
         "title": "RAYMARCHING ENGINE",
         "tagline": "Incorporating raymarching into the traditional graphics pipeline",
         "description":"In progress. Check out the repo linked above, and come back soon!",
-        "thumbnail": "marching.png",
-        "cover": "../smooth loop.gif",
+        "thumbnail": "./p_thumbnails/marching_TH.jpeg",
+        "cover": "/p_covers/smooth loop.gif",
         "addl": [],
         "link": "https://github.com/lukegriley/raymarching",
         "id":"raymarching"
@@ -59,8 +59,8 @@
         "title": "FLIPBOOK",
         "tagline": "Accessible full-stack animation web app.",
         "description":"Final project for CS 0320, in collaboration with Ben M., Owen A., Alex O., and Dylan S. I was responsible for prototype design, frontend architecture, and part of the drawing functionality. This is a full-stack application that stores animations on MongoDB. It is currently not deployed, however you can find the repository above. See more info on our project: <br/><br/>Flipbook\n\nA full-stack animation webapp made with Typescript, React, MongoDB, in collaboration with aong9, oanders6, dsaunde2, bmaizes.\n\n## Background\nMaking animations has an accessibility problem. To make quality animations this requires professional software which is often bricked by a steep learning curve, expensive paywalls, and hardware demands. We gathered knowledge about this problem through interviews with peer animators, non-animators with interest in doing so, and through reviews of other animation software.\n\nOur project solves this by bridging the accessibility gap in animation with a simple sketch and tracing based interface. Of course, a non-software based solution would be to produce physical flipbooks to be drawn on, but our software allows the fast creation of animation cells and tracing of existing images/video frames. Doing this on a physical flipbook would require a large of paper resources and a backlit tracing surface.\n\nThis app should be a seamless, easy to access application for any users. It should be quickly deployable and with little barrier. The idea is that users will use it whenever they seek to animate something or want to work on an animation project or as a reference to other development projects.\n\n## Structure\n\nWhiteboard data module (model) → stores the data from user input to the website, ex. a series of drawn frames, by calling on the animation module via API\n\nWhiteboard visual module (view) → visually displays the data from the whiteboard data by calling on the animation module via API. This model will be made accessible through ARIA labels and descriptions, and with keyboard shortcuts like enter = move to the next frame, shift + enter = go to previous frame, shift+tab = hide/show the outline from the previous frame\n\nAnimation module (controller) → stores data from all the frames, putting the relevant frame onto the screen when appropriate and allowing new data to be added. Communicates with both the whiteboard visual and whiteboard data modules.\n\nExport module (model) → converts the data for a selected animations into either a GIF or mp4 based on the user’s choice.",
-        "thumbnail": "Flipbook.png",
-        "cover":"../Flipbook.png",
+        "thumbnail": "./p_thumbnails/flipbook_TH.jpeg",
+        "cover":"/p_covers/flipbook.png",
         "addl": ["https://i.imgur.com/T31KVrE.jpeg"],
         "link": "https://github.com/lukegriley/Flipbook",
         "id":"flipbook"
@@ -69,8 +69,8 @@
         "title": "HACK @ BROWN",
         "tagline": "Website for the 2023 and 2024 Hack @ Brown hackathon.",
         "description":"As part of the dev team for Hack @ Brown, designed and deployed the hackathon's website and registration system. I was responsible for the starter packs page, game design starter packs, and a section of web 3D models shown on the webpage using three.js. <br/> <br/> <strong><a href='2024.hackatbrown.org'>Visit the site here.</a></strong>",
-        "thumbnail": "hab24.png",
-        "cover": "../hab24.png",
+        "thumbnail": "./p_thumbnails/hab24_TH.jpeg",
+        "cover": "/p_covers/hab24.png",
         "addl": [],
         "link": "https://github.com/hackatbrown/2024.hackatbrown.org/",
         "id":"hackatbrown"
@@ -79,26 +79,21 @@
         "title": "180 DEGREES CONSULTING",
         "tagline": "Website for the 180DC Brown Chapter.",
         "description":"Developed for the Full Stack @ Brown student organization (Spring '23). I was responsible for Figma mockups and skeleton page components.",
-        "thumbnail": "180dc.png",
-        "cover": "../180dc.png",
+        "thumbnail": "./p_thumbnails/180dc_TH.jpeg",
+        "cover": "/p_covers/180dc.png",
         "addl": [],
         "link": "https://github.com/fullstackatbrown/180-degrees-consulting",
         "id":"180degrees"
       },
-      
-      
-
       {
         "title": "DECISION TREE",
         "tagline": "Decision tree made in Java.",
         "description":"A decision tree is a hierarchical model used for making decisions, particularly in machine learning and data analysis. It resembles an inverted tree structure, where each internal node represents a decision based on a specific feature or attribute, and each leaf node corresponds to the outcome or classification. The tree is constructed by recursively splitting the dataset into subsets based on the best features that provide the most information gain or impurity reduction. Decision trees are versatile and intuitive, making them widely used for classification and regression tasks. They are interpretable, allowing users to trace the decision-making process easily. However, they may be prone to overfitting, and techniques like pruning are often applied to optimize their performance.",
-        "thumbnail": "https://i.imgur.com/Qj4Ffas.jpeg",
-        "cover": "https://i.imgur.com/Qj4Ffas.jpeg",
+        "thumbnail": "./p_thumbnails/dec_TH.jpeg",
+        "cover": "/p_covers/dec.png",
         "addl": [],
         "link": "https://github.com/lukegriley/DecisionTree",
         "id":"decisiontree"
       }
-      
     ]
   }
-  

@@ -16,6 +16,7 @@ html, body {
 }
 
 .image-container {
+    margin-top:30px;
     position: relative;
     overflow: hidden;
   }
@@ -33,12 +34,12 @@ iframe {
 }
 
 .proj-title {
-    font-size:400%;
+    font-size:250%;
 }
 
 .proj-tagline {
     font-weight:400;
-    font-size:200%;
+    font-size:125%;
 }
 
 .project-body {
