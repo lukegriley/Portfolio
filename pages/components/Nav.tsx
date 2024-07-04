@@ -11,11 +11,13 @@ export default function Navs(props:NavsProps) {
       const filmsClass = props.selected==2 ? "navlink second selected" : "navlink second";
       const cvClass = props.selected==3 ? "navlink third selected" : "navlink third";
       const contactClass = props.selected==4 ? "navlink fourth selected" : "navlink fourth";
-    return (<div className="nav">
+    return (<><div className="nav">
+        
+        
         {/* <p className={logoClass}>LR</p> */}
         <Link href="/projects" className={projectsClass}>PROJECTS</Link>
         <Link href="/films" className={filmsClass}>FILM</Link>
         <Link href="/cv" className={cvClass}>RESUME</Link>
         <Link href="/contact" className={contactClass}>CONTACT</Link>
-        </div>);
+        </div></>);
 }

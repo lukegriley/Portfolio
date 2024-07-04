@@ -11,6 +11,7 @@ import "@/styles/project.css"
 import Navs from "./components/Nav";
 import Bars from "./components/bars";
 import Footer from "./footer";
+import Home from "@/app/page";
 
 export default function Projects() {
   const [projects, setProjects] = useState<ProjectProps[] | null>(null);

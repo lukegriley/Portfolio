@@ -22,7 +22,7 @@ export default function CV() {
         <h2>EDUCATION</h2>
             <h3>Brown University, Providence, RI</h3>
             <ul>
-              <li>A.B., expected May 2025; GPA 3.91</li>
+              <li>A.B., expected May 2025; GPA 3.93</li>
               <li>Double concentrations in Computer Science and Modern Culture & Media</li>
               <div className="course-container">
               <details>
@@ -34,21 +34,16 @@ export default function CV() {
                   <li>CSCI 0330: Computer Systems</li>
                   <li>CSCI 0320: Introduction to Software Engineering</li>
                   <li>CSCI 0200: Data Structures and Algorithms</li>
-                  <li>ENGN 1010: The Entrepreneurial Process</li>
-                  <li>APMA 1650: Statistical Inference</li>
+                  <li>CSCI 0111: Computing Foundations</li>
                   <li>MATH 0520: Linear Algebra</li>
-                  <li>ECON 0110: Principles of Economics</li>
                 </ul>
               </details>
               <details>
-                <summary className="courses hoverable">Relevant Media Courses</summary>
+                <summary className="courses hoverable">Relevant Business Courses</summary>
                 <ul className="courselist">
-                  <li>MCM 1710U: Advanced Projects in Film and Video</li>
-                  <li>MCM 0710: Filmic Practice</li>
-                  <li>MCM 0150: Text/Media/Culture</li>
-                  <li>MCM 0230: Digital Media</li>
-                  <li>VISA 0120: Digital Foundation</li>
-                  <li>PLSH 1000: Polish Cinema</li>
+                  <li>ENGN 1010: The Entrepreneurial Process</li>
+                  <li>APMA 1650: Statistical Inference</li>
+                  <li>ECON 0110: Principles of Economics</li>
                 </ul>
               </details>
               </div>
@@ -60,15 +55,74 @@ export default function CV() {
       </section>
 
       <section>
-        <h2>MEDIA &amp; BUSINESS EXPERIENCE</h2>
+        <h2>PROFESSIONAL EXPERIENCE</h2>
+        
+        <h3>Wizard / Genius Productions</h3>
+        <p>A.I. Intern | May 2024 - August 2024</p>
+        <ul className="bullet">
+          <li>Assisted media tech startup producing content using AI stylization and original footage; content acquired by Warner Bros. and various social media channels.</li>
+          <li>Implemented AI style transfer model for live-action footage using Python and Tensorflow.</li>
+          <li>Compiled training datasets using Python, Pandas, and OpenCV.</li>
+          <li>Maintained realtime media pipeline using FFMPEG, Unreal Engine, and Adobe API.</li>
+          <li>Constructed virtual sets and graphics in Unreal Engine and After Effects.</li>
+        </ul>
 
         <h3>PBS Distribution, Arlington, VA</h3>
         <p>Content and Operations Intern | June - July 2023</p>
         <ul className="bullet">
-          <li>Participated in activities across content teams, including tracking acquisitions, production status, release schedules, and distribution planning.</li>
-          <li>Compiled grassroots research for promotion of the Oscar-winning PBS documentary 20 Days in Mariupol.</li>
-          <li>Participated in content reviews, pitch, and partnership meetings with filmmakers, producers, and distributors.</li>
-          <li>Reviewed and researched program rights, verified content launches, and compiled release strategies.</li>
+          <li>Analyzed PBSd revenue and streaming data to recommend renewals for programs reaching their expirations.</li>
+          <li>Compiled research for promotion of the Oscar-winning PBS documentary 20 Days in Mariupol.</li>
+          <li>Tracked acquisitions, production status, release schedules and distribution planning.</li>
+          <li>Reviewed and researched program rights, verified content launches; compiled release strategies</li>
+          <li>Coordinated content reviews, pitch, and partnership meetings with filmmakers, producers and distributors</li>
+        </ul>
+
+        <h3>Brown University</h3>
+        <p>Teaching Assistant, CSCI 1230 – Computer Graphics</p>
+        <ul className="bullet">
+          <li>Assist instruction in concepts related to 3D vector graphics, raytracing, and OpenGL.</li>
+          <li>Modify curriculum and educational tools prior to start of semester.</li>
+
+        </ul>
+
+        <h3>Curious Cardinals, Providence, RI</h3>
+        <p>Instructor | July 2022 – Present</p>
+        <ul className="bullet">
+          <li>Teach and mentor middle school students in topics ranging from Python, game design with Unity and C#, filmmaking, and photography.</li>
+        </ul>
+
+        
+      </section>
+
+      <section>
+        <h2>STUDENT ACTIVITIES</h2>
+
+        <h3>Brown Technology Consulting Group, Providence, RI</h3>
+        <p>Member | Sept. 2023 – May 2024 </p>
+        <ul className="bullet">
+          <li>Compiled market research and provided UI/development services to SMASH Partners Capital, as well as LevelUp, a digital marketing agency.</li>
+        </ul>
+
+
+        <h3>Full Stack@Brown, Providence, RI</h3>
+        <p>Developer | February 2023 – May 2023; Sept. 2023 - May 2024</p>
+        <ul className="bullet">
+          <li>Designed and developed a website for Brown U.’s chapter of 180 Degrees Consulting, as well as IgniteCS.</li>
+        </ul>
+
+        <h3>Hack@Brown, Providence, RI</h3>
+        <p>Web Developer | September 2022 – January 2023; Sept. 2023 - February 2024</p>
+        <ul className="bullet">
+          <li>Design and deploy the website and internal tools as part of the Dev Team for Hack@Brown hackathon, which hosts over 500 college students in a 48-hour competitive event.</li>
+        </ul>
+
+        <h3>Brown Motion Pictures Club, Providence, RI</h3>
+        <p>Editor, Assistant Producer, Location Sound Recordist | October 2021 – Present</p>
+        <ul className="bullet">
+          <li>Spring 2024 - Present (Technical Coordinator): Manage equipment, software, and technical practices for all club members involved in BMP productions. </li>
+          <li>Spring 2023 (Editor): Responsible for editing film, communicating with the film director and director of photography regarding footage and editing goals, and managing post-production work.</li>
+          <li>Spring 2022 (Assistant Producer): Assisted the production team in location scouting, coordinated notes on each shot to communicate with the editor in post-production.</li>
+          <li>Fall 2021 (Location Sound Recordist): Set up and operated sound recording equipment on set and monitored audio levels during shots.</li>
         </ul>
 
         <h3>Brown Film Magazine, Providence, RI</h3>
@@ -77,73 +131,7 @@ export default function CV() {
           <li>Write articles for Brown Univ.’s film magazine, including movie reviews, creative nonfiction, and interviews with members of the entertainment industry.</li>
         </ul>
 
-        <h3>Brown Motion Pictures Club, Providence, RI</h3>
-        <p>Editor, Assistant Producer, Location Sound Recordist | October 2021 – May 2023</p>
-        <ul className="bullet">
-          <li>Spring 2023 (Editor): Responsible for editing film, communicating with the film director and director of photography regarding footage and editing goals, and managing post-production work.</li>
-          <li>Spring 2022 (Assistant Producer): Assisted the production team in location scouting, coordinated notes on each shot to communicate with the editor in post-production.</li>
-          <li>Fall 2021 (Location Sound Recordist): Set up and operated sound recording equipment on set and monitored audio levels during shots.</li>
-        </ul>
-
-        <h3>The Myriad, Los Angeles, CA</h3>
-        <p>Head Translator and Global Manager | July 2020 – January 2021</p>
-        <ul className="bullet">
-          <li>Wrote, researched, and translated news articles for an online international relations journal at themyriad.news.</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>TECHNICAL EXPERIENCE</h2>
-
-        <h3>Brown Technology Consulting Group, Providence, RI</h3>
-        <p>Member | Sept. 2023 – present</p>
-        <ul className="bullet">
-          <li>Provide consulting and web development services to LevelUp, a digital marketing agency.</li>
-        </ul>
-
-        <h3>Full Stack@Brown, Providence, RI</h3>
-        <p>Developer | February 2023 – May 2023; Sept. 2023 - present</p>
-        <ul className="bullet">
-          <li>Design and develop a website for Brown U.’s chapter of 180 Degrees Consulting, as well as IgniteCS.</li>
-        </ul>
-
-        <h3>Hack@Brown, Providence, RI</h3>
-        <p>Web Developer | September 2022 – January 2023; Sept. 2023 - present</p>
-        <ul className="bullet">
-          <li>Design and deploy the website and internal tools as part of the Dev Team for Hack@Brown hackathon, which hosts over 500 college students in a 48-hour competitive event.</li>
-        </ul>
-
-        <h3>Curious Cardinals, Providence, RI</h3>
-        <p>Instructor | July 2022 – Present</p>
-        <ul className="bullet">
-          <li>Taught and mentored middle school students in topics ranging from Python, game design with Unity and C#, filmmaking, and photography.</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>TECHNICAL SKILLS AND PROJECTS</h2>
-
-        <h3>Technical Skills</h3>
-        <ul className="bullet">
-          <li>Typescript/React.js: Utilized in the development of various websites including Hack@Brown, 180 Degrees Consulting’s Brown U. Chapter, IgniteCS, and LevelUp Digital Marketing.</li>
-          <li>MongoDB, Express.js, Node.js: Utilized MERN stack to create a full-stack language-learning flashcard web app.</li>
-          <li>Python: Data analytics with Pandas library. Tutor introductory programming in Python, as well as game design with the PyGame library.</li>
-          <li>C++: Created a 3D vector graphics engine in CSCI 1230.</li>
-          <li>C: Utilized in CSCI 0330, along with x86-64 assembly.</li>
-          <li>Unity Game Engine/C#: Taught an introductory game design course in Unity, including the basics of creating C# scripts to interact with in-game objects.</li>
-          <li>Java: Learned the principles of object-oriented programming in CSCI 200 – Program Design with Data Structures and Algorithms, as well as AP Computer Science A and Design and Data Structures.</li>
-          <li>Office Software: Microsoft Office, Google Suite, Slack, Agile.</li>
-          <li>Languages: Fluent in English and Spanish; intermediate in Russian and German.</li>
-        </ul>
-
-        <h3>Projects</h3>
-        <ul className="bullet">
-          <li>Designed and developed websites for various organizations, including Hack@Brown, 180 Degrees Consulting’s Brown U. Chapter, IgniteCS, and LevelUp Digital Marketing.</li>
-          <li>Utilized the MERN stack to create a full-stack language-learning flashcard web app.</li>
-          <li>Created a 3D vector graphics engine in C++ as part of the CSCI 1230 course.</li>
-          <li>Contributed to the development of internal tools for the Hack@Brown hackathon as a Web Developer.</li>
-          <li>Taught and mentored middle school students in topics such as Python, game design with Unity and C#, filmmaking, and photography as an Instructor at Curious Cardinals.</li>
-        </ul>
+        
       </section>
     </div>
     <Footer/>

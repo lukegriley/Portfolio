@@ -1,6 +1,46 @@
 {
     "projects": [
       {
+        "title": "NEURAL RADIANCE FIELDS",
+        "tagline": "3D Reconstruction using Structure-from-Motion and NeRFs.",
+        "description": "",
+        "thumbnail": "./p_thumbnails/nerf_TH.png",
+        "cover": "",
+        "addl": [],
+        "link": "https://github.com/IgnacioBlancasRodriguez/NeRF-or-Nothing",
+        "id":"nerf"
+      },
+      {
+        "title": "FOLIAGE SIMULATION",
+        "tagline": "A Physically-inspired Approach to the Simulation of Plant Lifecycles, written in C++. ",
+        "description": "",
+        "thumbnail": "./p_thumbnails/foliage_TH.png",
+        "cover": "/p_covers/foliage.png",
+        "addl": [],
+        "link": "https://github.com/lukegriley/CS2240Final",
+        "id":"foliage"
+      },
+      {
+        "title": "PHYSICS ENGINE",
+        "tagline": "A physics engine supporting rigid and elastic bodies using the Finite Element Method. Written with C++ and OpenGL.",
+        "description": "",
+        "thumbnail": "./p_thumbnails/fem_TH.png",
+        "cover": "",
+        "addl": [],
+        "link": "https://github.com/lukegriley/Physics",
+        "id":"physics"
+      },
+      {
+        "title": "PATHTRACER",
+        "tagline": "A CPU pathtracer supporting caustics, indirecting lighting, refractions, and denoising. Written in C++.",
+        "description": "",
+        "thumbnail": "./p_thumbnails/path_TH.png",
+        "cover": "/p_covers/pathtracer.png",
+        "addl": ["/p_covers/mirror_denoise.png","/p_covers/glossy.png","/p_covers/cornell.png"],
+        "link": "https://github.com/brown-cs-224/path-lukegriley",
+        "id":"pathtracer"
+      },
+      {
         "title": "RAYTRACER",
         "tagline": "A raytracer built in C++, with Phong illumination, shadow mapping, and recursive reflections.",
         "description": "My Raytracer calculates intersections and object normals by creating an object of the Intersection class associated with a given pixel's P and d values in object space. The main function of this object, calculateIntersection(), uses a switch statement to call intersection calculation functions based on the primitive type. These functions themselves have helper functions, which calculate possible T values for each face. The cylinder intersection function, for example, calls a function for intersection with a cylindrical surface, along with two calls to flat base intersection function (at 2 different Y levels). This allows me to reuse code for certain faces across multiple primitives. Once each faces' T values have been calculated, the primitive intersection function picks the smallest positive T value, if any, and returns. Separating my implicit equations by face also allows me to keep track of which face was hit by the ray, which I allows me to quickly calculate object normals.<br /><br /> Because of this, my calculateObjectNormal() function follows a similar philosophy of face-based helper functions. While looping through the primitives in my scene, I keep track of the shape with the closest T value. I save this shape's intersection object in closestI and primitive object in closestShape. These are both used to calculate lighting. After looping through, I calculate the object's normal in world space using the inverse transpose of the shape's CTM, as discussed in lecture. I calculate the direction to the camera using's the object's and the camera's positions in world space. I pass all the necessary data to a phong() function in a separate light.cpp class. My current version only implements directional light. I loop through all lights, check if any are directional, and implement phong illumination as explained previously.",

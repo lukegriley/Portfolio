@@ -1,8 +1,12 @@
 import "@/styles/bars.css"
+import Link from "next/link"
 export default function Bars() {
     return <>
-    <div className="bar red"><a className="barlink" href="/"></a></div>
+    <Link href={"/"}>
+    <div className="bar red"></div>
         <div className="bar blue"></div>
         <div className="bar yellow"></div>
+        </Link>
     </>
+    
 }
