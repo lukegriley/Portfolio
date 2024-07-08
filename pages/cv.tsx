@@ -22,7 +22,7 @@ export default function CV() {
         <h2>EDUCATION</h2>
             <h3>Brown University, Providence, RI</h3>
             <ul>
-              <li>A.B., expected May 2025; GPA 3.93</li>
+              <li>A.B., expected May 2025; GPA 3.90</li>
               <li>Double concentrations in Computer Science and Modern Culture & Media</li>
               <div className="course-container">
               <details>

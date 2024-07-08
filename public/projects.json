@@ -11,16 +11,6 @@
         "id":"nerf"
       },
       {
-        "title": "FOLIAGE SIMULATION",
-        "tagline": "A Physically-inspired Approach to the Simulation of Plant Lifecycles, written in C++. ",
-        "description": "",
-        "thumbnail": "./p_thumbnails/foliage_TH.png",
-        "cover": "/p_covers/foliage.png",
-        "addl": [],
-        "link": "https://github.com/lukegriley/CS2240Final",
-        "id":"foliage"
-      },
-      {
         "title": "PHYSICS ENGINE",
         "tagline": "A physics engine supporting rigid and elastic bodies using the Finite Element Method. Written with C++ and OpenGL.",
         "description": "",
@@ -31,6 +21,18 @@
         "id":"physics"
       },
       {
+        "title": "HELM.AI",
+        "tagline": "A prototype AI model for climate risk assessment towards real estate properties.",
+        "description":"Prototype model of climate risks experienced by real estate <br/<Uses PyTorch gradient boosting model in combination with historical climate disaster data, real-time NWS data, and property-specific characteristics to assess a given property's vulnerability.<br/><br/>Our business proposal won first place among final pitch judges for ENGN 1010. <strong><a className=\"hoverable\"href=\"https://docs.google.com/presentation/d/1PvFg9vB56K5no0lHdBYM5I9KPbjMzv5s-N9wXL1dFSk/view\">Read our final pitch here.</a></strong>",
+        "thumbnail": "./p_thumbnails/helm_TH.jpeg",
+        "cover": "/p_covers/helm.png",
+        "addl": ["https://i.imgur.com/6i67PtI.png",
+        "https://i.imgur.com/pDfzfC5.png",
+        "https://i.imgur.com/0wPXhLL.png"],
+        "link": "",
+        "id":"helm"
+      },
+      {
         "title": "PATHTRACER",
         "tagline": "A CPU pathtracer supporting caustics, indirecting lighting, refractions, and denoising. Written in C++.",
         "description": "",
@@ -39,6 +41,16 @@
         "addl": ["/p_covers/mirror_denoise.png","/p_covers/glossy.png","/p_covers/cornell.png"],
         "link": "https://github.com/brown-cs-224/path-lukegriley",
         "id":"pathtracer"
+      },
+      {
+        "title": "FOLIAGE SIMULATION",
+        "tagline": "A Physically-inspired Approach to the Simulation of Plant Lifecycles, written in C++. ",
+        "description": "",
+        "thumbnail": "./p_thumbnails/foliage_TH.png",
+        "cover": "/p_covers/foliage.png",
+        "addl": [],
+        "link": "https://github.com/lukegriley/CS2240Final",
+        "id":"foliage"
       },
       {
         "title": "RAYTRACER",
@@ -72,18 +84,6 @@
           "https://raw.githubusercontent.com/BrownCSCI1230/scenefiles/main/action/required_outputs/spot_light_2.png"],
         "link": "https://github.com/lukegriley/rasterizer",
         "id":"rasterizer"
-      },
-      {
-        "title": "HELM.AI",
-        "tagline": "A prototype AI model for climate risk assessment towards real estate properties.",
-        "description":"An MVP prototype for an AI risk evaluator for cliamte damage to American real estate.<br/>Uses SCIKIT gradient boosting model in combination with historical climate disaster data, real-time NWS data, and property-specific vulnerable characteristics.<br/>Our business proposal won first place among final pitch judges for ENGN 1010. <strong><a className=\"hoverable\"href=\"https://docs.google.com/presentation/d/1PvFg9vB56K5no0lHdBYM5I9KPbjMzv5s-N9wXL1dFSk/view\">Read our final pitch here.</a></strong>",
-        "thumbnail": "./p_thumbnails/helm_TH.jpeg",
-        "cover": "/p_covers/helm.png",
-        "addl": ["https://i.imgur.com/6i67PtI.png",
-        "https://i.imgur.com/pDfzfC5.png",
-        "https://i.imgur.com/0wPXhLL.png"],
-        "link": "https://github.com/lukegriley/Helm.AI",
-        "id":"helm"
       },
       {
         "title": "RAYMARCHING ENGINE",
