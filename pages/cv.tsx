@@ -14,6 +14,7 @@ export default function CV() {
     <>
     <Bars/>
     <div className="inside">
+      <br/>
     <Navs selected={3}/>
     <Link href="/Luke Riley Resume 2024.pdf" className="pdfLink hoverable">See single-page PDF</Link>
     <div className="cvbody">
@@ -134,7 +135,6 @@ export default function CV() {
         
       </section>
     </div>
-    <Footer/>
     </div>
     </>
   );
