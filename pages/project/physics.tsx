@@ -37,7 +37,7 @@ export default function Page() {
     <br/>
     <div className="proj-desc">
      A generalized improvement on my Finite Element Method project for CSCI 2240. Check out the repo + video, linked above!
-     <br/><br/> This is an ongoing side project for me. Improvement are coming in the following weeks - I would love to port this to WebGL!
+     <br/><br/> This is an ongoing side project for me. Improvements are coming in the following weeks - I would love to port this to WebGL!
     </div>
     <br/>
     

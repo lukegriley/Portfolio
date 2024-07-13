@@ -37,8 +37,8 @@ export default function Page() {
     <br/>
     <div className="proj-desc">
      For my final project in CSCI 1430 - Computer Vision, my group and I wanted to implement some form of 3D reconstruction
-     using uncalibrated image sequences. As a hot topic in computer graphics (and a very active research in the Brown Visual Computing Lab!), we decided on neural radiance fields. 
-     <a href={"https://www.matthewtancik.com/nerf"} >The original paper was released in 2020</a>. I will spare a detailed explanation of its structure - in essence neural radiance fields generate novel views from calibrated image sequences using raycasting and volumetric rendering.
+     using uncalibrated image sequences. As a hot topic in computer graphics (and a very active area of research in the Brown Visual Computing Lab!), we decided on neural radiance fields. 
+     <a href={"https://www.matthewtancik.com/nerf"} > The original paper was released in 2020</a>. I will spare a detailed explanation of its structure - in essence neural radiance fields generate novel views from calibrated image sequences using raycasting and volumetric rendering.
      A keyword for us is <strong>calibrated</strong> views. Since our goal was reconstruction using uncalibrated image sequences, our pipeline had to include a previous part 
      to estimate the camera pose of each image before we could generate our dataset. For this we used the open-source SfM library Colmap. Structure-from-motion works by identifying key 3D points across
      multiple overlapping images to estimate the camera poses. After calculating camera pose data, we created a dataset for our own NeRF model written in PyTorch. A typical NeRF dataset is a collection of rays representing each pixel in each image. Each ray contains 3 pieces of information:
