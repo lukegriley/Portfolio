@@ -85,7 +85,7 @@ body {
   }
   .inside {
     /* overflow-x: hidden; */
-    width: calc(100vw - 100px);
+    /* width: calc(100vw - 100px); */
   }
   .introtext {
     padding-left:50px;
