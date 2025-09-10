@@ -21,7 +21,7 @@
             "title": "BUZZKILL",
             "role": "Producer",
             "description": "Directed by Celine Dipp and Zoe Redlich. Premiered at Brown Indie Festival Spring '24.",
-            "embed":"<iframe src='https://drive.google.com/file/d/16UQC0WsgGitbUjVWas72UxUkqGfrqRhx/preview' width='1280' height='720'></iframe>",
+            "embed":"<iframe src='https://drive.google.com/file/d/16UQC0WsgGitbUjVWas72UxUkqGfrqRhx/preview' width='1280' height='720></iframe>",
             "id": "buzzkill",
             "thumbnail": "./f_thumbnails/buzzkill_TH.jpg"
         },
@@ -29,7 +29,7 @@
             "title": "Commencement",
             "role": "Assistant Director",
             "description": "Directed by Davis Jackson. Premiered at Brown Indie Festival Spring '24. Will update when Vimeo becomes available!",
-            "embed":"<img src='./f_thumbnails/commencement.jpg' width='1280' height='720'></img>",
+            "embed":"<img src='./f_thumbnails/commencement.jpg' width='1280' height='0'></img>",
             "id": "commencement",
             "thumbnail": "./f_thumbnails/commencement_TH.jpg"
         },

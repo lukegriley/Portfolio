@@ -84,6 +84,11 @@ iframe {
   src: url('/SourceSerif4-Italic-VariableFont_opsz,wght.ttf');
   }
 
+  .responsive-iframe {
+    width:1280px;
+    height:auto;
+  }
+
   @media only screen and (max-width: 800px) {
     .proj-title {
         font-size:200%;
